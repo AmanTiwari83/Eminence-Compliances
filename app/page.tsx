@@ -62,4 +62,4 @@ const styles = {
     borderRadius: "50%",
     animation: "spin 1s linear infinite",
   },
-};
+} as const;
