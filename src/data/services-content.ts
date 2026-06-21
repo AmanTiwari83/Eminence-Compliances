@@ -10,7 +10,7 @@ export const ServiceContent = {
 
     glance: [
       { label: "Authority", value: "Bureau of Indian Standards" },
-      { label: "Timeline", value: "8–16 Weeks", badge: "amber" },
+      { label: "Timeline", value: "4 Weeks", badge: "amber" },
       { label: "Validity", value: "1–2 Years (Renewable)" },
       { label: "Scheme", value: "Scheme I" },
       {
@@ -51,7 +51,7 @@ export const ServiceContent = {
       { label: "License Type", value: "Product Certification" },
       { label: "Validity Period", value: "1–2 Years" },
       { label: "Renewal", value: "Annual Renewal" },
-      { label: "Typical Timeline", value: "8–16 Weeks", badge: "amber" },
+      { label: "Typical Timeline", value: "4 Weeks", badge: "amber" },
       { label: "Factory Audit", value: "Required", badge: "green" },
       {
         label: "Testing Required",
@@ -231,7 +231,7 @@ export const ServiceContent = {
 
     glance: [
       { label: "Authority", value: "Bureau of Indian Standards" },
-      { label: "Timeline", value: "6–12 Weeks", badge: "amber" },
+      { label: "Timeline", value: "6 Months", badge: "amber" },
       { label: "Validity", value: "1–2 Years (Renewable)" },
       { label: "Scheme", value: "FMCS / Scheme I" },
       {
@@ -272,7 +272,7 @@ export const ServiceContent = {
       { label: "Scheme", value: "Foreign Manufacturer Certification Scheme" },
       { label: "AIR Required", value: "Yes — Mandatory", badge: "green" },
       { label: "Validity Period", value: "1–2 Years" },
-      { label: "Typical Timeline", value: "6–12 Weeks", badge: "amber" },
+      { label: "Typical Timeline", value: "6 Months", badge: "amber" },
       { label: "Factory Audit", value: "Required (Overseas)", badge: "green" },
       {
         label: "Testing Required",
@@ -318,17 +318,17 @@ export const ServiceContent = {
       },
       {
         step: 4,
-        icon: "🔬",
-        title: "Product Testing at BIS-Recognised Lab",
-        description:
-          "Samples are dispatched to an approved lab. We track testing progress and resolve any technical queries raised.",
-      },
-      {
-        step: 5,
         icon: "🏭",
         title: "Overseas Factory Audit",
         description:
           "BIS-appointed auditors visit your overseas facility. We prepare your team with a detailed pre-audit readiness guide.",
+      },
+      {
+        step: 5,
+        icon: "🔬",
+        title: "Product Testing at BIS-Recognised Lab",
+        description:
+          "Samples are dispatched to an approved lab. We track testing progress and resolve any technical queries raised.",
       },
       {
         step: 6,
@@ -924,7 +924,7 @@ export const ServiceContent = {
         badge: "green",
       },
       { label: "Products Covered", value: "70+ Categories" },
-      { label: "Renewal", value: "Periodic (varies by product)" },
+      { label: "Renewal", value: "Mainly 2 Years (Varies by Product)" },
     ],
 
     stats: [
@@ -1348,7 +1348,7 @@ export const ServiceContent = {
       },
       { label: "Approval Type", value: "Equipment Type Approval (ETA)" },
       { label: "Validity", value: "Lifetime (One-time)", badge: "green" },
-      { label: "Typical Timeline", value: "4–8 Weeks", badge: "amber" },
+      { label: "Typical Timeline", value: "2-3 Weeks", badge: "amber" },
       { label: "RF Testing", value: "Required — SAR & RF Emissions" },
       { label: "Factory Audit", value: "Not Required" },
       { label: "Bands Covered", value: "2.4 GHz, 5 GHz, Sub-GHz" },
@@ -1742,11 +1742,11 @@ export const ServiceContent = {
 
     glance: [
       { label: "Authority", value: "CPCB / SPCB" },
-      { label: "Timeline", value: "4–8 Weeks", badge: "amber" },
+      { label: "Timeline", value: "2-4 Weeks", badge: "amber" },
       { label: "Waste Types", value: "E-waste, Plastic, Battery" },
       {
         label: "Mandatory?",
-        value: "Yes — Producers & Importers",
+        value: "Yes — Producers, Brand Owners & Importers",
         badge: "green",
       },
       { label: "Target", value: "Annual Recycling %" },
@@ -1789,7 +1789,7 @@ export const ServiceContent = {
         value: "Recycling / Collection %",
         badge: "green",
       },
-      { label: "Typical Timeline", value: "4–8 Weeks", badge: "amber" },
+      { label: "Typical Timeline", value: "2-4 Weeks", badge: "amber" },
       { label: "Quarterly Filing", value: "Required", badge: "green" },
       { label: "Renewal", value: "Annual" },
       {
@@ -1973,7 +1973,7 @@ export const ServiceContent = {
         label: "Authority",
         value: "Dept. of Consumer Affairs / State Controllers",
       },
-      { label: "Timeline", value: "3–6 Weeks", badge: "amber" },
+      { label: "Timeline", value: "1 Weeks", badge: "amber" },
       { label: "Validity", value: "Lifetime (usually)" },
       {
         label: "Mandatory?",
@@ -2016,7 +2016,7 @@ export const ServiceContent = {
         value: "Importer / Manufacturer Registration",
       },
       { label: "Validity", value: "Lifetime (usually)" },
-      { label: "Typical Timeline", value: "3–6 Weeks", badge: "amber" },
+      { label: "Typical Timeline", value: "1 Weeks", badge: "amber" },
       { label: "Label Verification", value: "Required", badge: "green" },
       { label: "Factory Audit", value: "Not Required" },
       { label: "Renewal", value: "Not Required (in most states)" },
