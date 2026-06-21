@@ -3,7 +3,7 @@
 
 import { motion, type Variants } from "framer-motion";
 
-import { servicesData } from "@/data/services-data";
+import { servicesData } from "@/data/services-data2";
 import Heading from "@/components/common/Heading";
 import ServiceCard, { containerVariants } from "@/components/common/ServiceCard";
 

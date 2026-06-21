@@ -43,6 +43,71 @@ interface ServiceGroup {
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
+// const serviceGroups: ServiceGroup[] = [
+//   {
+//     category: "BIS Certifications",
+//     items: [
+//       {
+//         label: "BIS Certification (Foreign Manufacturer)",
+//         icon: HiOutlineGlobeAlt,
+//         href: "/services/bis-foreign",
+//         tag: "Popular",
+//       },
+//       {
+//         label: "ISI Mark Certification",
+//         icon: TbShieldStar,
+//         href: "/services/isi-mark",
+//       },
+//       {
+//         label: "BIS CRS Registration",
+//         icon: TbCertificate,
+//         href: "/services/bis-crs",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Regulatory Approvals",
+//     items: [
+//       {
+//         label: "WPC Approval",
+//         icon: TbAtom,
+//         href: "/services/wpc",
+//       },
+//       {
+//         label: "TEC Certification",
+//         icon: BsShieldCheck,
+//         href: "/services/tec",
+//       },
+//       {
+//         label: "PESO Approval",
+//         icon: TbFlame,
+//         href: "/services/peso",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Registrations",
+//     items: [
+//       {
+//         label: "EPR Registration",
+//         icon: TbRecycle,
+//         href: "/services/epr",
+//         tag: "New",
+//       },
+//       {
+//         label: "LMPC Registration",
+//         icon: TbWeight,
+//         href: "/services/lmpc",
+//       },
+//       {
+//         label: "Hallmark Registration",
+//         icon: TbDiamond,
+//         href: "/services/hallmark",
+//       },
+//     ],
+//   },
+// ];
+
 const serviceGroups: ServiceGroup[] = [
   {
     category: "BIS Certifications",
@@ -50,18 +115,18 @@ const serviceGroups: ServiceGroup[] = [
       {
         label: "BIS Certification (Foreign Manufacturer)",
         icon: HiOutlineGlobeAlt,
-        href: "/services/bis-foreign",
+        href: "/services/bis-fmcs-certification",
         tag: "Popular",
       },
       {
         label: "ISI Mark Certification",
         icon: TbShieldStar,
-        href: "/services/isi-mark",
+        href: "/services/bis-isi-certification",
       },
       {
         label: "BIS CRS Registration",
         icon: TbCertificate,
-        href: "/services/bis-crs",
+        href: "/services/bis-crs-registration",
       },
     ],
   },
@@ -69,19 +134,19 @@ const serviceGroups: ServiceGroup[] = [
     category: "Regulatory Approvals",
     items: [
       {
-        label: "WPC Approval",
+        label: "WPC ETA Approval",
         icon: TbAtom,
-        href: "/services/wpc",
+        href: "/services/wpc-eta-approval",
       },
       {
-        label: "TEC Certification",
+        label: "BEE Registration",
         icon: BsShieldCheck,
-        href: "/services/tec",
+        href: "/services/bee-registration",
       },
       {
-        label: "PESO Approval",
+        label: "EPR Authorization",
         icon: TbFlame,
-        href: "/services/peso",
+        href: "/services/epr-authorization",
       },
     ],
   },
@@ -89,20 +154,20 @@ const serviceGroups: ServiceGroup[] = [
     category: "Registrations",
     items: [
       {
-        label: "EPR Registration",
+        label: "BIS Eco Mark",
         icon: TbRecycle,
-        href: "/services/epr",
+        href: "/services/bis-eco-mark",
         tag: "New",
       },
       {
-        label: "LMPC Registration",
+        label: "Legal Metrology (LMPCR)",
         icon: TbWeight,
-        href: "/services/lmpc",
+        href: "/services/legal-metrology-registration",
       },
       {
-        label: "Hallmark Registration",
+        label: "BIS Hallmark Certification",
         icon: TbDiamond,
-        href: "/services/hallmark",
+        href: "/services/bis-hallmark-certification",
       },
     ],
   },

@@ -65,14 +65,14 @@ const quickLinks: QuickLink[] = [
   { label: "Home",                   href: "/" },
   { label: "About Us",               href: "/about" },
   { label: "Services",               href: "/services" },
-  { label: "Global Audits",          href: "/audits" },
-  { label: "Recent Certifications",  href: "/certifications" },
+  // { label: "Global Audits",          href: "/audits" },
+  // { label: "Recent Certifications",  href: "/certifications" },
   { label: "Contact Us",             href: "/contact" },
 ];
 
 const contacts: ContactItem[] = [
   { icon: <FaEnvelope size={13} />, value: "info@eminencecompliance.com",          href: "mailto:info@eminencecompliance.com" },
-  { icon: <FaEnvelope size={13} />, value: "Inbox@eminencecompliance.com",         href: "mailto:Inbox@eminencecompliance.com" },
+  { icon: <FaEnvelope size={13} />, value: "ceo@eminencecompliance.com",         href: "mailto:ceo@eminencecompliance.com" },
   { icon: <FaEnvelope size={13} />, value: "certification@eminencecompliance.com", href: "mailto:certification@eminencecompliance.com" },
   { icon: <FaPhone   size={13} />, value: "+91 7428555852",                        href: "tel:+917428555852" },
   { icon: <FaGlobe   size={13} />, value: "www.eminencecompliance.com",            href: "https://www.eminencecompliance.com" },
@@ -369,9 +369,7 @@ export function Footer() {
                   className="family-regular leading-relaxed"
                   style={{ color: "rgb(233 229 222 / 90%)" }}
                 >
-                  G/F Kh No-230, F-348 OLD-34-A/1, Gali No-7,
-                  <br />
-                  Ganga Vihar, New Delhi – 110094, India
+                  North-East Delhi – 110094, India
                 </span>
               </li>
             </ul>
