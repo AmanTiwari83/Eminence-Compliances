@@ -386,7 +386,7 @@ import Link from "next/link";
 
 const heroImages = [
   { url: "/images/home/new-bg18.png", alt: "Slider Image" },
-  { url: "/images/home/new-bg17.png", alt: "Slider Image" },
+  { url: "/images/home/new-bg19.png", alt: "Slider Image" },
   { url: "/images/home/new-bg2.png", alt: "Slider Image" },
 ];
 
