@@ -385,9 +385,9 @@ import { FaBolt } from "react-icons/fa6";
 import Link from "next/link";
 
 const heroImages = [
-  { url: "/images/home/new-bg11.png", alt: "Slider Image" },
-  { url: "/images/home/new-bg9.png", alt: "Slider Image" },
-  { url: "/images/home/new-bg4.png", alt: "Slider Image" },
+  { url: "/images/home/new-bg18.png", alt: "Slider Image" },
+  { url: "/images/home/new-bg17.png", alt: "Slider Image" },
+  { url: "/images/home/new-bg2.png", alt: "Slider Image" },
 ];
 
 const stats = [
@@ -621,7 +621,8 @@ const Slider = () => {
               </div>
 
               {/* Stats */}
-              <div className="h6 flex gap-8 pt-5 border-t border-white/15">
+              {/* <div className="h6 flex gap-8 pt-5 border-t border-white/15"> */}
+              <div className="h6 flex gap-8 pt-5">
                 {stats.map((s) => (
                   <div key={s.label}>
                     <p className="text-xl md:text-2xl text-white leading-none mb-1 family-semibold">{s.num}</p>
