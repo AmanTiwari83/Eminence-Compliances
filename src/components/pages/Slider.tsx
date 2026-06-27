@@ -385,7 +385,7 @@ import { FaBolt } from "react-icons/fa6";
 import Link from "next/link";
 
 const heroImages = [
-  { url: "/images/home/new-bg18.png", alt: "Slider Image" },
+  { url: "/images/home/new-bg20.png", alt: "Slider Image" },
   { url: "/images/home/new-bg19.png", alt: "Slider Image" },
   { url: "/images/home/new-bg2.png", alt: "Slider Image" },
 ];
