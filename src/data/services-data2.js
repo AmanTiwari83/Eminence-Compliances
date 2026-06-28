@@ -68,20 +68,25 @@ export const servicesData = [
     title: "BIS ISI Certification",
     description: "Certification for industrial products to ensure quality, safety, and reliability with the ISI mark.",
     category: "BIS Services",
+    abbr: "ISI",  
     icon: getIconForService("BIS ISI"),
+    logo: "/images/service-desc/bis.png",
   },
   {
     id: "bis-fmcs-certification",
     title: "BIS FMCS Certification",
     description: "Foreign Manufacturer Certification Scheme for overseas applicants to sell products in India.",
     category: "BIS Services",
+    abbr: "FMCS",
     icon: getIconForService("FMCS"),
+    logo: "/images/service-desc/fmcs2.png",
   },
   {
     id: "bis-hallmark-certification",
     title: "BIS Hallmark Certification",
     description: "Purity certification for Gold and Silver jewelry to protect consumers from adulteration.",
     category: "BIS Services",
+    abbr: "Hallmark",
     icon: getIconForService("Hallmark"),
   },
   {
@@ -89,6 +94,7 @@ export const servicesData = [
     title: "Assaying & Hallmarking Centre",
     description: "Recognition for centers involved in testing and marking precious metal purity.",
     category: "BIS Services",
+    abbr: "Assaying",
     icon: getIconForService("BIS"),
   },
   {
@@ -96,6 +102,8 @@ export const servicesData = [
     title: "Compulsory Registration (CRS)",
     description: "Mandatory registration for electronics and IT goods to ensure safety standards.",
     category: "BIS Services",
+    abbr: "CRS",
+    logo: "/images/service-desc/crs.png",
     icon: getIconForService("BIS CRS"),
   },
   {
@@ -103,6 +111,7 @@ export const servicesData = [
     title: "BIS Eco Mark Certification",
     description: "Certification for environment-friendly products that meet specific ecological criteria.",
     category: "BIS Services",
+    abbr: "Eco Mark",
     icon: getIconForService("Eco Mark"),
   },
   {
@@ -110,6 +119,7 @@ export const servicesData = [
     title: "WPC ETA Approval",
     description: "Mandatory approval for wireless and Bluetooth equipment imported or sold in India.",
     category: "Wireless",
+    abbr: "ETA",
     icon: getIconForService("WPC"),
   },
   {
@@ -117,6 +127,8 @@ export const servicesData = [
     title: "BEE Registration",
     description: "Energy efficiency labeling for appliances to help consumers save on energy costs.",
     category: "Energy",
+    abbr: "BEE",
+    logo: "/images/service-desc/bee.png",
     icon: getIconForService("BEE"),
   },
   {
@@ -124,6 +136,7 @@ export const servicesData = [
     title: "EPR Authorization",
     description: "Extended Producer Responsibility for managing waste from electronics, plastic, and batteries.",
     category: "Environment",
+    abbr: "EPR",
     icon: getIconForService("EPR"),
   },
   {
@@ -131,6 +144,7 @@ export const servicesData = [
     title: "Legal Metrology (LMPCR)",
     description: "Packaged commodity registration for compliance with weight and measurement laws.",
     category: "Legal",
+    abbr: "LMPCR",
     icon: getIconForService("Legal"),
   },
   {
@@ -138,6 +152,7 @@ export const servicesData = [
     title: "WMI Code Registration",
     description: "World Manufacturer Identifier registration for vehicle manufacturers to assign VINs.",
     category: "Automotive",
+    abbr: "WMI",
     icon: getIconForService("WMI"),
   }
 ];
