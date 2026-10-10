@@ -97,7 +97,6 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function CertificatePreview({ service }: { service: ServiceDetail }) {
   const [zoom, setZoom] = useState(false);
-  console.log("service.certificateImage", service.certificateImage);
   const cert = service.certificateImage;
 
   if (!cert?.src) return null; // nothing renders for services without an image
