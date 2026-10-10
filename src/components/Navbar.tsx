@@ -25,8 +25,18 @@ import {
   TbWeight,
   TbFlame,
   TbDiamond,
+  // new icons
+  TbBuildingFactory2,
+  TbFileCertificate,
+  TbFlask,
+  TbRuler2,
+  TbMedicalCross,
+  TbAntennaBars5,
+  TbCpu,
+  TbFileCheck,
+  TbWorld,
+  TbScale,
 } from "react-icons/tb";
-
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 interface ServiceItem {
@@ -53,7 +63,6 @@ interface NavLink {
   items?: NavDropdownItem[];
 }
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
 
 // const serviceGroups: ServiceGroup[] = [
 //   {
@@ -62,18 +71,18 @@ interface NavLink {
 //       {
 //         label: "BIS Certification (Foreign Manufacturer)",
 //         icon: HiOutlineGlobeAlt,
-//         href: "/services/bis-foreign",
+//         href: "/services/bis-fmcs-certification",
 //         tag: "Popular",
 //       },
 //       {
 //         label: "ISI Mark Certification",
 //         icon: TbShieldStar,
-//         href: "/services/isi-mark",
+//         href: "/services/bis-isi-certification",
 //       },
 //       {
 //         label: "BIS CRS Registration",
 //         icon: TbCertificate,
-//         href: "/services/bis-crs",
+//         href: "/services/bis-crs-registration",
 //       },
 //     ],
 //   },
@@ -81,19 +90,19 @@ interface NavLink {
 //     category: "Regulatory Approvals",
 //     items: [
 //       {
-//         label: "WPC Approval",
+//         label: "WPC ETA Approval",
 //         icon: TbAtom,
-//         href: "/services/wpc",
+//         href: "/services/wpc-eta-approval",
 //       },
 //       {
-//         label: "TEC Certification",
+//         label: "BEE Registration",
 //         icon: BsShieldCheck,
-//         href: "/services/tec",
+//         href: "/services/bee-registration",
 //       },
 //       {
-//         label: "PESO Approval",
+//         label: "EPR Authorization",
 //         icon: TbFlame,
-//         href: "/services/peso",
+//         href: "/services/epr-authorization",
 //       },
 //     ],
 //   },
@@ -101,25 +110,26 @@ interface NavLink {
 //     category: "Registrations",
 //     items: [
 //       {
-//         label: "EPR Registration",
+//         label: "BIS Eco Mark",
 //         icon: TbRecycle,
-//         href: "/services/epr",
+//         href: "/services/bis-eco-mark",
 //         tag: "New",
 //       },
 //       {
-//         label: "LMPC Registration",
+//         label: "Legal Metrology (LMPCR)",
 //         icon: TbWeight,
-//         href: "/services/lmpc",
+//         href: "/services/legal-metrology-registration",
 //       },
 //       {
-//         label: "Hallmark Registration",
+//         label: "BIS Hallmark Certification",
 //         icon: TbDiamond,
-//         href: "/services/hallmark",
+//         href: "/services/bis-hallmark-certification",
 //       },
 //     ],
 //   },
 // ];
 
+// ─── 2. Replace your serviceGroups with this ──────────────────────────────────
 const serviceGroups: ServiceGroup[] = [
   {
     category: "BIS Certifications",
@@ -136,9 +146,24 @@ const serviceGroups: ServiceGroup[] = [
         href: "/services/bis-isi-certification",
       },
       {
+        label: "ISI Mark – Domestic Manufacturer",
+        icon: TbBuildingFactory2,
+        href: "/services/bis-isi-domestic-manufacturer",
+      },
+      {
         label: "BIS CRS Registration",
         icon: TbCertificate,
         href: "/services/bis-crs-registration",
+      },
+      {
+        label: "BIS Scheme X – OTR",
+        icon: TbFileCertificate,
+        href: "/services/bis-scheme-x-otr",
+      },
+      {
+        label: "BIS Hallmark Certification",
+        icon: TbDiamond,
+        href: "/services/bis-hallmark-certification",
       },
     ],
   },
@@ -149,6 +174,26 @@ const serviceGroups: ServiceGroup[] = [
         label: "WPC ETA Approval",
         icon: TbAtom,
         href: "/services/wpc-eta-approval",
+      },
+      {
+        label: "TEC Certification",
+        icon: TbAntennaBars5,
+        href: "/services/tec-certification",
+      },
+      {
+        label: "STQC Certification",
+        icon: TbCpu,
+        href: "/services/stqc-certification",
+      },
+      {
+        label: "CDSCO Certification",
+        icon: TbMedicalCross,
+        href: "/services/cdsco-certification",
+      },
+      {
+        label: "PESO Certification",
+        icon: TbFlame,
+        href: "/services/peso-certification",
       },
       {
         label: "BEE Registration",
@@ -163,7 +208,37 @@ const serviceGroups: ServiceGroup[] = [
     ],
   },
   {
-    category: "Registrations",
+    category: "NOCs & Exports",
+    items: [
+      {
+        label: "NOC from DPIIT",
+        icon: TbFileCheck,
+        href: "/services/dpiit-noc",
+      },
+      {
+        label: "NOC from MeitY",
+        icon: TbFileCheck,
+        href: "/services/meity-noc",
+      },
+      {
+        label: "NOC – Chemicals & Fertilizers",
+        icon: TbFileCheck,
+        href: "/services/chemicals-fertilizers-noc",
+      },
+      {
+        label: "NOC from Ministry of Steel",
+        icon: TbFileCheck,
+        href: "/services/steel-noc",
+      },
+      {
+        label: "SASO Certification (Saudi Arabia)",
+        icon: TbWorld,
+        href: "/services/saso-certification",
+      },
+    ],
+  },
+  {
+    category: "Registrations & Standards",
     items: [
       {
         label: "BIS Eco Mark",
@@ -177,13 +252,24 @@ const serviceGroups: ServiceGroup[] = [
         href: "/services/legal-metrology-registration",
       },
       {
-        label: "BIS Hallmark Certification",
-        icon: TbDiamond,
-        href: "/services/bis-hallmark-certification",
+        label: "WMI Certification",
+        icon: TbScale,
+        href: "/services/wmi-certification",
+      },
+      {
+        label: "BIS Laboratory Recognition (LRS)",
+        icon: TbFlask,
+        href: "/services/bis-laboratory-recognition",
+      },
+      {
+        label: "BIS Standardization Division",
+        icon: TbRuler2,
+        href: "/services/bis-standardization-division",
       },
     ],
   },
 ];
+
 
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
@@ -410,7 +496,7 @@ export default function SheenNavbar() {
                 return (
                   <li
                     key={label}
-                    className="relative"
+                    className={dropdown === "services" ? "" : "relative"}
                     onMouseEnter={() => handleDropdownMouseEnter(href)}
                     onMouseLeave={handleDropdownMouseLeave}
                   >
@@ -436,10 +522,10 @@ export default function SheenNavbar() {
                           initial="hidden"
                           animate="visible"
                           exit="exit"
-                          className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[700px]"
+                          className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[920px] max-w-[calc(100vw-2rem)]"
                         >
                           {/* Pointer */}
-                          <div className="absolute top-[5px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-slate-100 rotate-45 z-10" />
+                          <div className="absolute top-[5px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-slate-100 z-10" />
 
                           <div className="relative z-20 bg-white rounded-2xl shadow-[0_20px_60px_rgba(13,31,60,0.15)] border border-slate-100 overflow-hidden">
                             {/* Header strip */}
@@ -461,7 +547,7 @@ export default function SheenNavbar() {
                             </div>
 
                             {/* Service groups */}
-                            <div className="grid grid-cols-3 divide-x divide-slate-50 p-1">
+                            <div className="grid grid-cols-4 divide-x divide-slate-50 p-1">
                               {serviceGroups.map((group) => (
                                 <div key={group.category} className="px-3 py-4">
                                   <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400 px-3 mb-3">

@@ -154,7 +154,110 @@ export const servicesData = [
     category: "Automotive",
     abbr: "WMI",
     icon: getIconForService("WMI"),
-  }
+  },
+
+
+
+   //New Services
+  // {
+  //   id: "bis-isi-domestic-manufacturer",
+  //   title: "BIS Certification (ISI Mark)",
+  //   description: "ISI Mark licence for Indian manufacturers, with third-party assurance of product quality and safety.",
+  //   category: "BIS",
+  //   icon: getIconForService("BIS"),
+  // },
+  {
+    id: "bis-laboratory-recognition",
+    title: "BIS Laboratory Recognition (LRS)",
+    description: "BIS recognition for in-house and third-party labs to test products as per Indian Standards.",
+    category: "BIS",
+    icon: getIconForService("Laboratory"),
+  },
+  {
+    id: "bis-scheme-x-otr",
+    title: "BIS Scheme X – OTR",
+    description: "Mandatory certification for notified products under the Omnibus Technical Regulation.",
+    category: "BIS",
+    icon: getIconForService("BIS"),
+  },
+  {
+    id: "bis-standardization-division",
+    title: "BIS Standardization (Scientific) Division",
+    description: "Support to propose, develop, revise and comment on Indian Standards.",
+    category: "BIS",
+    icon: getIconForService("Standardization"),
+  },
+  {
+    id: "cdsco-certification",
+    title: "CDSCO Certification",
+    description: "Approval to manufacture, import or market medical devices, drugs, diagnostics and cosmetics in India.",
+    category: "Healthcare",
+    icon: getIconForService("CDSCO"),
+  },
+  {
+    id: "dpiit-noc",
+    title: "NOC from DPIIT",
+    description: "No Objection Certificate for the lawful import of products that are not BIS certified.",
+    category: "NOC",
+    icon: getIconForService("NOC"),
+  },
+  {
+    id: "meity-noc",
+    title: "NOC from MeitY",
+    description: "Official clarification that your electronics product is outside BIS CRS, for smooth customs clearance.",
+    category: "NOC",
+    icon: getIconForService("NOC"),
+  },
+  {
+    id: "chemicals-fertilizers-noc",
+    title: "NOC from Ministry of Chemicals & Fertilizers",
+    description: "NOC for importing regulated chemicals and fertilizers and for chemical-related project approvals.",
+    category: "NOC",
+    icon: getIconForService("NOC"),
+  },
+  {
+    id: "steel-noc",
+    title: "NOC from Ministry of Steel",
+    description: "NOC for the import and use of regulated steel products under Quality Control Orders.",
+    category: "NOC",
+    icon: getIconForService("NOC"),
+  },
+  {
+    id: "peso-certification",
+    title: "PESO Certification",
+    description: "Safety approval for petroleum, explosives, compressed gas and hazardous substance equipment.",
+    category: "Safety",
+    icon: getIconForService("PESO"),
+  },
+  {
+    id: "saso-certification",
+    title: "SASO Certification",
+    description: "Product and shipment certificates (PCoC and SCoC) for exporting to Saudi Arabia.",
+    category: "International",
+    icon: getIconForService("SASO"),
+  },
+  {
+    id: "stqc-certification",
+    title: "STQC Certification",
+    description: "Quality and security certification for IT products and e-Governance solutions, for government tenders.",
+    category: "IT & Telecom",
+    icon: getIconForService("STQC"),
+  },
+  {
+    id: "tec-certification",
+    title: "TEC Certification",
+    description: "Mandatory MTCTE certification for telecom and ICT equipment sold or imported in India.",
+    category: "IT & Telecom",
+    icon: getIconForService("TEC"),
+  },
+  {
+    id: "wmi-certification",
+    title: "WMI Certification (Legal Metrology)",
+    description: "Model approval for weighing and measuring instruments under the Legal Metrology Act, 2009.",
+    category: "Legal",
+    icon: getIconForService("Legal"),
+  },
+
 ];
 
 // // --- DATASET B: For the Detailed Page ---

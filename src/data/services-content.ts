@@ -1,3 +1,9 @@
+const CONTACT = {
+  email: "info@eminencecompliance.com",
+  phone: "+91 74285 55852",
+  whatsapp: "917428555852",
+};
+
 // --- DATASET B: For the Detailed Page ---
 export const ServiceContent = {
   "bis-isi-certification": {
@@ -2415,6 +2421,2897 @@ export const ServiceContent = {
       email: "info@eminencecompliance.com",
       phone: "+91 74285 55852",
       whatsapp: "917428555852",
+    },
+  },
+
+
+  //New Services
+  // ───────────────────────────────────────────────────────────
+  // 1. BIS ISI MARK — DOMESTIC MANUFACTURER
+  // ───────────────────────────────────────────────────────────
+  "bis-isi-domestic-manufacturer": {
+    id: "bis-isi-domestic-manufacturer",
+    category: "BIS / ISI Mark",
+    title: "BIS Certification for Domestic Manufacturers",
+    subtitle: "ISI Mark Licence for Indian Factories",
+    shortDescription:
+      "A BIS licence to use the ISI Mark, giving third-party assurance of the quality, safety and reliability of products made in India.",
+
+    glance: [
+      { label: "Authority", value: "Bureau of Indian Standards" },
+      { label: "Normal Procedure", value: "60–65 Working Days", badge: "amber" },
+      { label: "Simplified Procedure", value: "35–40 Working Days", badge: "amber" },
+      { label: "Mandatory?", value: "Yes — Notified Products", badge: "green" },
+      { label: "Licence Holder", value: "Manufacturing Factory Units" },
+      { label: "Factory Inspection", value: "Required", badge: "green" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "The Bureau of Indian Standards (BIS) is India's national standards body, established under the Bureau of Indian Standards Act, 2016 and functioning under the Ministry of Consumer Affairs, Food and Public Distribution. Through its Product Certification Scheme, BIS grants licences to manufacturers whose products conform to the relevant Indian Standards (IS). The mark that a licensee is allowed to use is the ISI Mark.",
+        "BIS certification is mandatory for products notified under the compulsory certification scheme, and such products cannot be sold in India without it. The process involves product testing, factory inspection and ongoing surveillance. The ISI Mark shows the Indian Standard number at the top and the unique licence number (CM/L-XXXXXXXXXX) at the bottom.",
+      ],
+      whyItMatters: [
+        "Mandatory for products under BIS's compulsory certification scheme",
+        "Third-party assurance of quality, safety and reliability",
+        "Confirms conformity to the relevant Indian Standards",
+        "Builds customer trust and a strong brand image",
+        "Backed by ongoing surveillance to maintain compliance",
+      ],
+      industries: [
+        "Manufacturing Units",
+        "Products under Compulsory Certification",
+        "Products under Voluntary Certification",
+        "Multi-Factory Manufacturers",
+      ],
+    },
+
+    certMeta: [
+      { label: "Applicable Law", value: "BIS Act, 2016" },
+      { label: "Issuing Body", value: "Bureau of Indian Standards" },
+      { label: "Certification Mark", value: "ISI Mark" },
+      { label: "Licence Format", value: "CM/L-XXXXXXXXXX" },
+      { label: "Normal Procedure", value: "60–65 Working Days", badge: "amber" },
+      { label: "Simplified Procedure", value: "35–40 Working Days", badge: "amber" },
+      { label: "Factory Inspection", value: "Required", badge: "green" },
+      { label: "Licence Granted To", value: "Factory Units Only" },
+    ],
+
+    stats: [
+      { value: "60–65", label: "Working Days (Normal)" },
+      { value: "35–40", label: "Working Days (Simplified)" },
+      { value: "2", label: "Procedures Available" },
+      { value: "Factory", label: "Based Licensing" },
+    ],
+
+    features: [
+      "Third-party Assurance",
+      "Factory Inspection & Testing",
+      "Ongoing Surveillance",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🏗️",
+        title: "Pre-Application Preparation",
+        description:
+          "The manufacturing unit sets up its in-house testing laboratory, aligns its products with the relevant Indian Standards and compiles the required documentation.",
+      },
+      {
+        step: 2,
+        icon: "📄",
+        title: "Application Submission & Scrutiny",
+        description:
+          "The application is submitted to BIS, followed by a preliminary document review and a preliminary factory inspection by BIS officials.",
+      },
+      {
+        step: 3,
+        icon: "🏭",
+        title: "Factory Inspection",
+        description:
+          "BIS conducts a comprehensive audit of the manufacturing facility, processes and quality systems.",
+      },
+      {
+        step: 4,
+        icon: "🔬",
+        title: "Independent Testing",
+        description:
+          "Sealed product samples are sent to BIS-recognised laboratories and tested against all specified IS parameters. Under the Simplified Procedure, samples are pre-tested before application and undergo confirmatory testing afterwards.",
+      },
+      {
+        step: 5,
+        icon: "✅",
+        title: "Grant of Licence",
+        description:
+          "On successful test results and compliance verification, BIS grants the licence authorising use of the ISI Mark.",
+      },
+      {
+        step: 6,
+        icon: "🔄",
+        title: "Surveillance & Ongoing Compliance",
+        description:
+          "After the grant, regular surveillance continues to confirm that your products keep meeting the Indian Standard. We support you in staying compliant.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🌏",
+        title: "Legal Market Access",
+        description:
+          "Products under compulsory certification cannot be sold in India without a valid BIS licence.",
+      },
+      {
+        icon: "🛡️",
+        title: "Third-Party Assurance",
+        description:
+          "Independent testing and factory inspection give customers confidence in your product's quality and safety.",
+      },
+      {
+        icon: "⭐",
+        title: "Brand Credibility",
+        description:
+          "BIS has become synonymous with authenticity and quality in India, and the ISI Mark strengthens your brand image.",
+      },
+      {
+        icon: "⚡",
+        title: "Faster Route Available",
+        description:
+          "The Simplified Procedure uses pre-tested samples and can deliver certification in 35–40 working days.",
+      },
+      {
+        icon: "📋",
+        title: "Standards Compliance",
+        description:
+          "Certification confirms that your product conforms to the specific Indian Standard that applies to it.",
+      },
+      {
+        icon: "🔬",
+        title: "Stronger Quality Systems",
+        description:
+          "An equipped in-house laboratory and defined inspection and testing procedures help you maintain consistent quality.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company & Factory Documents",
+        items: [
+          "Completed BIS Application Form",
+          "Factory Registration and Other KYC Documents",
+          "Authorised Signatory Details and QCI/NABCB Accreditation Documents",
+          "Factory Layout",
+          "Additional Documents (as required)",
+        ],
+      },
+      {
+        groupLabel: "Technical & Testing Documents",
+        items: [
+          "Detailed Manufacturing Process Flow Chart",
+          "Raw Material Specifications with Supplier Test Certificates",
+          "List of Manufacturing and Testing Equipment with Calibration Certificates",
+          "Factory Test Reports",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Requirements differ by product and Indian Standard. BIS publishes product manuals covering sampling, test equipment and the Scheme of Inspection and Testing (SIT). Our team prepares a product-specific checklist so that your application is complete and less likely to be rejected.",
+
+    faqs: [
+      {
+        question: "What are the BIS fees for a domestic manufacturer?",
+        answer:
+          "The application fee is ₹1,000, audit charges are ₹7,000 (sample testing may vary) and the licence fee is ₹1,000. The sample testing fee depends on the product and laboratory, and the marking fee is paid in advance as per the applicable IS Standard.",
+      },
+      {
+        question: "Who can apply for an ISI Mark licence?",
+        answer:
+          "BIS licences are issued only to manufacturing factory units, not to distributors or retailers.",
+      },
+      {
+        question: "What if I manufacture at more than one factory?",
+        answer:
+          "A separate application is required for each product-factory combination when you operate multiple factories at different locations.",
+      },
+      {
+        question: "Can I outsource part of the manufacturing?",
+        answer:
+          "All manufacturing, from raw material receipt to final packaging, must take place within the licensed factory. Any outsourcing needs prior BIS approval.",
+      },
+      {
+        question: "Which procedure is faster, Normal or Simplified?",
+        answer:
+          "The Simplified Procedure takes about 35–40 working days, compared with 60–65 working days under the Normal Procedure. It relies on test reports from samples that were tested at a BIS-recognised laboratory before application.",
+      },
+    ],
+
+    cta: {
+      title: "Get Your ISI Mark Licence",
+      description:
+        "Speak with our BIS specialists. We guide you through documentation, factory readiness, testing and the BIS application from start to finish.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 2. BIS LABORATORY RECOGNITION SCHEME (LRS)
+  // ───────────────────────────────────────────────────────────
+  "bis-laboratory-recognition": {
+    id: "bis-laboratory-recognition",
+    category: "BIS / LRS",
+    title: "BIS Laboratory Recognition Scheme (LRS)",
+    subtitle: "Recognition for Testing Laboratories",
+    shortDescription:
+      "BIS recognition for in-house and independent laboratories that are competent to test products as per Indian Standards.",
+
+    glance: [
+      { label: "Authority", value: "Bureau of Indian Standards" },
+      { label: "Timeline", value: "8–16 Weeks", badge: "amber" },
+      { label: "Applicable To", value: "In-house & Third-party Labs" },
+      { label: "Quality System", value: "ISO/IEC 17025 (Preferred)" },
+      { label: "Assessment", value: "On-site + Witness Testing", badge: "green" },
+      { label: "Recognition Scope", value: "Specific Tests & Standards" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "The Laboratory Recognition Scheme (LRS) is a framework established by the Bureau of Indian Standards to recognise testing laboratories that are competent to carry out product testing as per Indian Standards (IS). BIS assesses each laboratory for its infrastructure, technical capability and quality systems so that its test results are accurate and reliable.",
+        "Recognised laboratories play a critical role in BIS certification schemes such as ISI, CRS and Scheme X by supporting product compliance. Both in-house laboratories of manufacturers and independent third-party labs can apply for recognition.",
+      ],
+      whyItMatters: [
+        "Ensures the reliability and accuracy of test results",
+        "Strengthens the conformity assessment ecosystem",
+        "Supports BIS certification schemes (ISI, CRS, Scheme X and others)",
+        "Maintains uniform testing standards across laboratories",
+        "Builds confidence among regulators, manufacturers and consumers",
+      ],
+      industries: [
+        "Electrical & Electronics",
+        "Chemicals & Polymers",
+        "Mechanical & Construction Materials",
+        "Consumer Goods",
+        "Automotive Components",
+        "Manufacturer In-house Labs",
+        "Independent Third-party Labs",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "Bureau of Indian Standards" },
+      { label: "Scheme", value: "Laboratory Recognition Scheme" },
+      { label: "Applicable To", value: "In-house & Third-party Labs" },
+      { label: "Quality System", value: "ISO/IEC 17025 (Preferred)" },
+      { label: "Typical Timeline", value: "8–16 Weeks", badge: "amber" },
+      { label: "Assessment", value: "On-site + Witness Testing", badge: "green" },
+      { label: "Recognition Scope", value: "Specific Parameters & Standards" },
+      { label: "Surveillance", value: "Periodic Audits" },
+    ],
+
+    stats: [
+      { value: "8–16", label: "Weeks Typical Timeline" },
+      { value: "5", label: "Recognition Steps" },
+      { value: "2", label: "Lab Types Eligible" },
+      { value: "Periodic", label: "Surveillance Audits" },
+    ],
+
+    features: [
+      "Technical Competence",
+      "Reliable Test Results",
+      "Supports ISI, CRS & Scheme X",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "📄",
+        title: "Application Submission",
+        description:
+          "The application is submitted with your scope of testing and the required documents.",
+      },
+      {
+        step: 2,
+        icon: "🔍",
+        title: "Document Review",
+        description:
+          "BIS evaluates your quality manual, test procedures, calibration records and technical competence.",
+      },
+      {
+        step: 3,
+        icon: "🏢",
+        title: "On-Site Assessment",
+        description:
+          "BIS auditors carry out a detailed inspection of the laboratory facility.",
+      },
+      {
+        step: 4,
+        icon: "🧪",
+        title: "Witness Testing",
+        description:
+          "The laboratory demonstrates its testing capability through actual sample testing.",
+      },
+      {
+        step: 5,
+        icon: "✅",
+        title: "Grant of Recognition",
+        description:
+          "Recognition is granted for specific test parameters and standards.",
+      },
+      {
+        step: 6,
+        icon: "🔄",
+        title: "Surveillance & Scope Extension",
+        description:
+          "Periodic surveillance audits follow, and you can apply to extend the scope to additional tests.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🎯",
+        title: "Credible Test Results",
+        description:
+          "BIS recognition shows that your lab has the infrastructure, skills and systems to deliver accurate results.",
+      },
+      {
+        icon: "🧩",
+        title: "Supports Multiple Schemes",
+        description:
+          "Recognised labs support BIS schemes such as ISI, CRS and Scheme X.",
+      },
+      {
+        icon: "🏭",
+        title: "Open to In-house Labs",
+        description:
+          "Manufacturers' in-house laboratories can apply alongside independent third-party labs.",
+      },
+      {
+        icon: "📈",
+        title: "Scope Can Grow",
+        description:
+          "Once recognised, you can apply for scope extension to cover additional tests.",
+      },
+      {
+        icon: "🤝",
+        title: "Stakeholder Confidence",
+        description:
+          "Regulators, manufacturers and consumers can rely on the results of a BIS-recognised laboratory.",
+      },
+      {
+        icon: "📊",
+        title: "Uniform Testing Standards",
+        description:
+          "Recognition helps keep testing practices consistent with those of other recognised laboratories.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Quality & Technical Documents",
+        items: [
+          "Laboratory Quality Manual",
+          "Test Methods and Standard Operating Procedures (SOPs)",
+          "Internal Audit and Management Review Records",
+          "NABL Accreditation (if available)",
+        ],
+      },
+      {
+        groupLabel: "Equipment, Personnel & Facility",
+        items: [
+          "List of Testing Equipment with Calibration Records",
+          "Details of Technical Personnel and Qualifications",
+          "Layout of Laboratory and Testing Facilities",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Recognition is granted for specific test parameters and standards, so your scope of testing should be defined before filing. We start with a gap analysis against BIS LRS requirements.",
+
+    faqs: [
+      {
+        question: "Who can apply for BIS laboratory recognition?",
+        answer:
+          "Both in-house laboratories of manufacturers and independent third-party laboratories can apply.",
+      },
+      {
+        question: "Is ISO/IEC 17025 mandatory?",
+        answer:
+          "BIS expects a quality management system, preferably as per ISO/IEC 17025. Non-compliance with ISO/IEC 17025 requirements is a common reason for delays.",
+      },
+      {
+        question: "How long does LRS recognition take?",
+        answer:
+          "The total estimated timeline is 8–16 weeks: filing (1–2 weeks), document review (2–4 weeks), audit scheduling (2–3 weeks), on-site assessment and witness testing (1 week), closure of non-conformities (2–4 weeks) and grant (1–2 weeks).",
+      },
+      {
+        question: "What does the recognition cover?",
+        answer:
+          "Recognition is granted for specific test parameters and standards. You can apply later to extend the scope to additional tests.",
+      },
+      {
+        question: "What happens after recognition is granted?",
+        answer:
+          "Recognition is granted for a defined period as per BIS norms. BIS conducts periodic surveillance audits, and continuous compliance with BIS requirements is mandatory.",
+      },
+    ],
+
+    cta: {
+      title: "Get Your Laboratory BIS Recognised",
+      description:
+        "From gap analysis and quality manual preparation to mock audits and BIS coordination, our team supports you through every stage of LRS recognition.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 3. BIS SCHEME X — OTR
+  // ───────────────────────────────────────────────────────────
+  "bis-scheme-x-otr": {
+    id: "bis-scheme-x-otr",
+    category: "BIS / Scheme X",
+    title: "BIS Scheme X – OTR",
+    subtitle: "Omnibus Technical Regulation",
+    shortDescription:
+      "Mandatory BIS certification for notified products covered under a single technical regulation, for both domestic and foreign manufacturers.",
+
+    glance: [
+      { label: "Authority", value: "Bureau of Indian Standards" },
+      { label: "Timeline", value: "Varies by Product", badge: "amber" },
+      { label: "Mandatory?", value: "Yes — Notified Products", badge: "green" },
+      { label: "Applies To", value: "Domestic & Foreign Manufacturers" },
+      { label: "Initial Validity", value: "3 Years", badge: "amber" },
+      { label: "Factory Assessment", value: "Required", badge: "green" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "BIS Scheme X – OTR (Omnibus Technical Regulation) is a regulatory framework introduced by the Bureau of Indian Standards to ensure that a broad range of products meet essential safety, quality and performance requirements. Multiple products and industries are brought under a single technical regulation, with coverage determined by HSN code.",
+        "Manufacturers must comply with the specified Indian Standards (IS 16819:2018 / ISO 12100:2010) before manufacturing the product. The regulation applies to domestic manufacturers as well as foreign manufacturers exporting to India. Certification is required before manufacturing begins, and manufacturing facilities are assessed.",
+      ],
+      whyItMatters: [
+        "Compliance is compulsory for notified products",
+        "Uniform safety and quality benchmarks across industries",
+        "Multiple product categories covered under one framework as per HSN code",
+        "Strengthens consumer protection",
+        "Ensures only compliant products enter the Indian market",
+      ],
+      industries: [
+        "Domestic Manufacturers",
+        "Foreign Manufacturers Exporting to India",
+        "Products Notified under OTR",
+        "Multi-product Manufacturers",
+      ],
+    },
+
+    certMeta: [
+      { label: "Scheme", value: "BIS Scheme X – OTR" },
+      { label: "Issuing Body", value: "Bureau of Indian Standards" },
+      { label: "Applicable Standards", value: "IS 16819:2018 / ISO 12100:2010" },
+      { label: "Coverage Basis", value: "HSN Code" },
+      { label: "Pre-Market Approval", value: "Before Manufacturing", badge: "green" },
+      { label: "Factory Assessment", value: "Required", badge: "green" },
+      { label: "Initial Validity", value: "3 Years", badge: "amber" },
+      { label: "On Renewal", value: "Up to 6 Years" },
+    ],
+
+    stats: [
+      { value: "3", label: "Years Initial Validity" },
+      { value: "Up to 6", label: "Years on Renewal" },
+      { value: "4", label: "Certification Steps" },
+      { value: "HSN", label: "Based Coverage" },
+    ],
+
+    features: [
+      "Single Regulation Coverage",
+      "Pre-Market Approval",
+      "Factory Assessment",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "📄",
+        title: "Application Filing",
+        description:
+          "The application is submitted to the BIS department along with product and manufacturer details.",
+      },
+      {
+        step: 2,
+        icon: "🔍",
+        title: "Documentation Review",
+        description:
+          "BIS officials assess your technical documents, specifications and compliance readiness.",
+      },
+      {
+        step: 3,
+        icon: "🏭",
+        title: "Factory Inspection",
+        description:
+          "BIS officials inspect the facility to verify your manufacturing and safety systems.",
+      },
+      {
+        step: 4,
+        icon: "✅",
+        title: "Grant of Certification",
+        description:
+          "Certification is granted once you successfully meet the OTR requirements.",
+      },
+      {
+        step: 5,
+        icon: "🔄",
+        title: "Surveillance & Renewal",
+        description:
+          "Regular surveillance and compliance checks follow. Timely renewal keeps your certification valid.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🧩",
+        title: "Single Framework",
+        description:
+          "Multiple product categories are covered under one regulation as per HSN code, which simplifies regulatory coverage.",
+      },
+      {
+        icon: "🌏",
+        title: "Market Access",
+        description:
+          "Compliance with OTR is required to place notified products in the Indian market.",
+      },
+      {
+        icon: "🛡️",
+        title: "Consumer Protection",
+        description:
+          "The regulation sets consistent safety and quality benchmarks that protect consumers.",
+      },
+      {
+        icon: "📏",
+        title: "Uniform Benchmarks",
+        description:
+          "The same safety and quality standards are enforced consistently across industries.",
+      },
+      {
+        icon: "⏳",
+        title: "Longer Validity",
+        description:
+          "Certification starts with a 3-year validity and can be extended up to 6 years at renewal.",
+      },
+      {
+        icon: "🧭",
+        title: "Clear Compliance Path",
+        description:
+          "A structured regulation makes it easier to understand what you need to comply with.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company & Legal Documents",
+        items: [
+          "Business Registration and Legal Documents",
+          "Manufacturing Process Details",
+          "Factory Layout and Production Capacity",
+          "Details of Authorised Indian Representative (for foreign manufacturers)",
+        ],
+      },
+      {
+        groupLabel: "Technical & Compliance Documents",
+        items: [
+          "Product Specifications and Drawings",
+          "Quality Control and Assurance Documents",
+          "Technical File (including multiple documents)",
+          "Risk Assessment Report",
+          "Test Reports (if available)",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "The technical file is made up of several documents and needs to be prepared carefully. Our specialists confirm whether your product falls under OTR and prepare the complete set before filing.",
+
+    faqs: [
+      {
+        question: "Who needs to comply with Scheme X – OTR?",
+        answer:
+          "Manufacturers of products notified under the regulation, including domestic manufacturers and foreign manufacturers exporting to India.",
+      },
+      {
+        question: "When must certification be obtained?",
+        answer:
+          "Certification is required before manufacturing the product, as OTR is a pre-market approval.",
+      },
+      {
+        question: "How long is the certification valid?",
+        answer:
+          "Initially for 3 years as per BIS guidelines. At renewal, it can be extended up to 6 years.",
+      },
+      {
+        question: "Is a factory inspection required?",
+        answer:
+          "Yes. BIS officials inspect the manufacturing facility to verify manufacturing and safety systems.",
+      },
+      {
+        question: "Do foreign manufacturers need an Indian representative?",
+        answer:
+          "Yes. Foreign manufacturers need to provide details of an Authorised Indian Representative along with their application.",
+      },
+    ],
+
+    cta: {
+      title: "Ensure Compliance with Scheme X – OTR",
+      description:
+        "If your products fall under the Omnibus Technical Regulation, timely certification is essential for market access in India. Talk to our compliance specialists.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 4. BIS STANDARDIZATION (SCIENTIFIC) DIVISION
+  // ───────────────────────────────────────────────────────────
+  "bis-standardization-division": {
+    id: "bis-standardization-division",
+    category: "BIS / Standardization",
+    title: "BIS Standardization (Scientific) Division",
+    subtitle: "Development & Revision of Indian Standards",
+    shortDescription:
+      "Support for organisations that want to propose, develop, revise or comment on Indian Standards across scientific and technical domains.",
+
+    glance: [
+      { label: "Authority", value: "Bureau of Indian Standards" },
+      { label: "Timeline", value: "5–6 Months", badge: "amber" },
+      { label: "Engagement", value: "Proposals & Committees" },
+      { label: "Alignment", value: "ISO / IEC Harmonisation" },
+      { label: "Process", value: "6 Stages" },
+      { label: "Outcome", value: "Published Indian Standard", badge: "green" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "The Standardization (Scientific) Division of the Bureau of Indian Standards is responsible for developing, formulating and revising Indian Standards (IS) across scientific and technical domains. It ensures that standards are scientifically robust, technologically relevant and globally aligned, supporting industries, regulators and consumers.",
+        "The division drafts new standards based on industry needs, government regulations and technological developments, and reviews existing ones to keep them aligned with global benchmarks. It works with industry experts, academia, laboratories and government bodies, and aligns its work with ISO, IEC and other international standardisation bodies.",
+      ],
+      whyItMatters: [
+        "Shape standards that are relevant to your industry",
+        "Stay ahead of compliance requirements and innovation",
+        "Address emerging technologies and scientific advancements",
+        "Support regulatory frameworks and quality infrastructure",
+        "Promote innovation and safety through standardisation",
+      ],
+      industries: [
+        "Electronics & IT Systems",
+        "Chemicals & Materials Science",
+        "Environment & Sustainability",
+        "Medical Devices & Healthcare",
+        "Advanced Engineering & Emerging Technologies",
+        "Industry Associations",
+        "Laboratories & Academia",
+      ],
+    },
+
+    certMeta: [
+      { label: "Division", value: "Standardization (Scientific)" },
+      { label: "Issuing Body", value: "Bureau of Indian Standards" },
+      { label: "Output", value: "Indian Standard (IS)" },
+      { label: "Harmonisation", value: "ISO / IEC" },
+      { label: "Typical Timeline", value: "5–6 Months", badge: "amber" },
+      { label: "Committee", value: "Technical / Sectional Committee" },
+      { label: "Public Review", value: "Stakeholder Comments", badge: "green" },
+      { label: "Final Approval", value: "BIS Authorities" },
+    ],
+
+    stats: [
+      { value: "5–6", label: "Months Typical Timeline" },
+      { value: "6", label: "Development Stages" },
+      { value: "15", label: "Days for Proposal Stage" },
+      { value: "30", label: "Days for Public Comments" },
+    ],
+
+    features: [
+      "Stakeholder Consultation",
+      "International Alignment",
+      "Technical Committee Participation",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "💡",
+        title: "Proposal Stage",
+        description:
+          "The need for a new standard or a revision is identified and the proposal is submitted for approval (about 15 days).",
+      },
+      {
+        step: 2,
+        icon: "👥",
+        title: "Committee Formation",
+        description:
+          "A technical or sectional committee with domain experts is constituted (about 20 days).",
+      },
+      {
+        step: 3,
+        icon: "📝",
+        title: "Draft Preparation",
+        description:
+          "The draft standard document is prepared (about 30 days).",
+      },
+      {
+        step: 4,
+        icon: "💬",
+        title: "Public Review & Comments",
+        description:
+          "The draft is circulated for stakeholder feedback (about 30 days).",
+      },
+      {
+        step: 5,
+        icon: "🔬",
+        title: "Finalisation",
+        description:
+          "Comments are incorporated and the draft is technically validated (about 60 days, including approval).",
+      },
+      {
+        step: 6,
+        icon: "✅",
+        title: "Approval & Publication",
+        description:
+          "BIS authorities approve the standard and it is published as an Indian Standard (IS) (about 15 days).",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🗣️",
+        title: "A Voice in Standards",
+        description:
+          "Participation lets you contribute technical input to standards that will affect your industry.",
+      },
+      {
+        icon: "🚀",
+        title: "Ahead on Compliance",
+        description:
+          "Early involvement helps your organisation prepare for new and revised requirements.",
+      },
+      {
+        icon: "🌐",
+        title: "Global Alignment",
+        description:
+          "Standards are harmonised with ISO, IEC and other international bodies.",
+      },
+      {
+        icon: "🧪",
+        title: "Emerging Technologies",
+        description:
+          "The division addresses new technologies and scientific advancements through new and revised standards.",
+      },
+      {
+        icon: "🏛️",
+        title: "Regulatory Support",
+        description:
+          "Indian Standards support regulatory frameworks and the wider quality infrastructure.",
+      },
+      {
+        icon: "🤝",
+        title: "Structured Consultation",
+        description:
+          "Standards are developed through consultation with industry, academia, laboratories and government bodies.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Proposal & Technical Inputs",
+        items: [
+          "Technical Proposals or Concept Notes",
+          "Industry Data and Scientific Research Inputs",
+          "Testing and Validation Data (if applicable)",
+        ],
+      },
+      {
+        groupLabel: "Reference & Stakeholder Inputs",
+        items: [
+          "Existing International Standards (ISO/IEC References)",
+          "Stakeholder Comments and Feedback",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "The inputs needed depend on whether you are proposing a new standard, requesting a revision or submitting public comments. We prepare a tailored input list once we understand your objective.",
+
+    faqs: [
+      {
+        question: "What does the Standardization (Scientific) Division do?",
+        answer:
+          "It develops, formulates and revises Indian Standards across scientific and technical domains, and harmonises them with international standards.",
+      },
+      {
+        question: "How long does it take to develop a standard?",
+        answer:
+          "The typical process takes about 5–6 months, depending on complexity and stakeholder involvement.",
+      },
+      {
+        question: "What are the stages of standard development?",
+        answer:
+          "Proposal, committee formation, draft preparation, public review and comments, finalisation, and approval and publication.",
+      },
+      {
+        question: "Who is consulted during development?",
+        answer:
+          "Industry experts, academia, laboratories and government bodies take part, and drafts are circulated publicly for stakeholder comments.",
+      },
+      {
+        question: "How can Eminence Global help?",
+        answer:
+          "We prepare standard proposals, support technical drafting, represent you in BIS committees, run gap analyses against existing standards and help with public comment submissions.",
+      },
+    ],
+
+    cta: {
+      title: "Participate in Standard Development with Confidence",
+      description:
+        "Active participation in BIS standardisation helps your organisation stay ahead in compliance and innovation. We support you at every stage of the lifecycle.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 5. CDSCO CERTIFICATION
+  // ───────────────────────────────────────────────────────────
+  "cdsco-certification": {
+    id: "cdsco-certification",
+    category: "CDSCO",
+    title: "CDSCO Certification",
+    subtitle: "Medical Devices & Drugs Approval in India",
+    shortDescription:
+      "Regulatory approval from the Central Drugs Standard Control Organization to manufacture, import or market medical devices, drugs, diagnostics and cosmetics in India.",
+
+    glance: [
+      { label: "Authority", value: "CDSCO (Ministry of Health & FW)" },
+      { label: "Timeline", value: "2–5 Months", badge: "amber" },
+      { label: "Filing Portal", value: "SUGAM Portal" },
+      { label: "Mandatory?", value: "Yes — Regulated Products", badge: "green" },
+      { label: "Governing Rules", value: "Medical Device Rules, 2017" },
+      { label: "Device Classes", value: "Class A, B, C & D" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "CDSCO Certification is the regulatory approval granted by the Central Drugs Standard Control Organization, which operates under the Ministry of Health and Family Welfare. CDSCO approves, licenses and regulates medical devices, pharmaceuticals, cosmetics and diagnostics in India.",
+        "Manufacturers and importers must obtain CDSCO approval before manufacturing, importing or marketing regulated products. Each category has its own regulatory pathway and documentation requirements, and foreign manufacturers must appoint an authorised Indian agent.",
+      ],
+      whyItMatters: [
+        "Legal authorisation to manufacture or import in India",
+        "Ensures product safety and regulatory compliance",
+        "Enhances credibility and market acceptance",
+        "Reduces the risk of penalties and product recalls",
+        "Facilitates smooth entry into the Indian healthcare market",
+      ],
+      industries: [
+        "Medical Device Manufacturers",
+        "Medical Device Importers",
+        "Pharmaceutical Companies",
+        "In-vitro Diagnostic (IVD) Makers",
+        "Cosmetics Importers",
+        "Foreign Manufacturers",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "CDSCO (MoHFW)" },
+      { label: "Governing Rules", value: "Medical Device Rules, 2017" },
+      { label: "Filing Portal", value: "SUGAM" },
+      { label: "Device Risk Classes", value: "A, B, C & D" },
+      { label: "Typical Timeline", value: "2–5 Months", badge: "amber" },
+      { label: "Importers", value: "Authorised Indian Agent", badge: "green" },
+      { label: "Validity", value: "Depends on Category" },
+      { label: "Post-Market", value: "Surveillance Required" },
+    ],
+
+    stats: [
+      { value: "2–5", label: "Months Typical Timeline" },
+      { value: "4", label: "Device Risk Classes" },
+      { value: "4", label: "Types of Approval" },
+      { value: "6", label: "Process Steps" },
+    ],
+
+    features: [
+      "Regulatory Authorisation",
+      "Product Safety Assurance",
+      "Healthcare Market Entry",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🧭",
+        title: "Classification of Product",
+        description:
+          "We determine the risk class of your product (Class A to D for medical devices) and plan the regulatory strategy.",
+      },
+      {
+        step: 2,
+        icon: "🤝",
+        title: "Authorised Indian Agent (for Imports)",
+        description:
+          "Foreign manufacturers must appoint an authorised Indian representative to act on their behalf.",
+      },
+      {
+        step: 3,
+        icon: "💻",
+        title: "Application Filing on CDSCO Portal",
+        description:
+          "The application is submitted through the online SUGAM portal.",
+      },
+      {
+        step: 4,
+        icon: "🔍",
+        title: "Documentation Review",
+        description:
+          "CDSCO evaluates your technical, quality and regulatory documents.",
+      },
+      {
+        step: 5,
+        icon: "💬",
+        title: "Query Resolution",
+        description:
+          "We address the clarifications raised by CDSCO officials.",
+      },
+      {
+        step: 6,
+        icon: "✅",
+        title: "Grant of Licence / Registration",
+        description:
+          "The approval is issued once the evaluation is completed successfully.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "⚖️",
+        title: "Legal Authorisation",
+        description:
+          "Approval gives you the legal right to manufacture or import regulated products in India.",
+      },
+      {
+        icon: "🛡️",
+        title: "Product Safety",
+        description:
+          "Certification confirms that your products meet safety, quality and performance standards before reaching consumers.",
+      },
+      {
+        icon: "⭐",
+        title: "Credibility",
+        description:
+          "Regulatory approval builds trust with healthcare providers, distributors and patients.",
+      },
+      {
+        icon: "🚫",
+        title: "Lower Penalty Risk",
+        description:
+          "Being compliant reduces the risk of penalties and product recalls.",
+      },
+      {
+        icon: "🏥",
+        title: "Healthcare Market Entry",
+        description:
+          "Approval makes it easier to enter India's regulated healthcare market.",
+      },
+      {
+        icon: "🧩",
+        title: "Wide Scope",
+        description:
+          "CDSCO covers medical devices, drugs, in-vitro diagnostics and cosmetics (import registration).",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Application & Regulatory Documents",
+        items: [
+          "Covering Letter and Application Form",
+          "Free Sale Certificate (FSC) / Certificate to Foreign Government",
+          "ISO 13485 Certificate (for medical devices)",
+          "Power of Attorney (for importers)",
+        ],
+      },
+      {
+        groupLabel: "Technical & Safety Documents",
+        items: [
+          "Device Master File (DMF) / Plant Master File (PMF)",
+          "Product Specifications and Labelling Details",
+          "Clinical Evaluation Data (if applicable)",
+          "Test Reports and Safety Data",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Requirements vary with the product category and risk class. For higher-risk devices or drugs, timelines may extend further depending on scrutiny.",
+
+    faqs: [
+      {
+        question: "What types of CDSCO approvals are there?",
+        answer:
+          "Medical Device Registration / Licence, Drug Manufacturing Licence, Import Licence, and Clinical Trial Approval.",
+      },
+      {
+        question: "Which products does CDSCO regulate?",
+        answer:
+          "Medical devices (Class A, B, C, D), pharmaceuticals and drugs, in-vitro diagnostic devices (IVDs) and cosmetics (registration for import).",
+      },
+      {
+        question: "How long does CDSCO approval take?",
+        answer:
+          "Typically 2–5 months, depending on product classification and documentation readiness. Higher-risk devices or drugs may take longer.",
+      },
+      {
+        question: "Can foreign manufacturers apply?",
+        answer:
+          "Yes, but they must appoint an authorised Indian agent. An Import Licence applies to foreign manufacturers exporting drugs or devices to India.",
+      },
+      {
+        question: "How long is the approval valid?",
+        answer:
+          "Validity depends on the product category. Periodic audits and post-market surveillance apply, and timely renewal and updates are mandatory.",
+      },
+    ],
+
+    cta: {
+      title: "Get CDSCO Approval Without Hassle",
+      description:
+        "CDSCO certification is essential for entering India's regulated healthcare market. Our regulatory specialists manage the process from classification to licence.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 6. NOC FROM DPIIT
+  // ───────────────────────────────────────────────────────────
+  "dpiit-noc": {
+    id: "dpiit-noc",
+    category: "NOC / DPIIT",
+    title: "NOC from DPIIT",
+    subtitle: "Import of Non-BIS Certified Products",
+    shortDescription:
+      "A No Objection Certificate from the Department for Promotion of Industry and Internal Trade for the lawful import of products that are not BIS certified.",
+
+    glance: [
+      { label: "Authority", value: "DPIIT" },
+      { label: "Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Required For", value: "Non-BIS Products under QCOs" },
+      { label: "Key Use", value: "Customs Clearance", badge: "green" },
+      { label: "Typical Cases", value: "R&D, Capital Goods, Small Lots" },
+      { label: "Our Support", value: "End-to-End" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "The import of certain products into India is regulated under Quality Control Orders (QCOs), which require compliance with standards issued by the Bureau of Indian Standards (BIS). Where products are not BIS certified, importers need a No Objection Certificate (NOC) from the Department for Promotion of Industry and Internal Trade (DPIIT) to import lawfully under specific exemptions or conditions.",
+        "We provide end-to-end assistance in obtaining a DPIIT NOC for non-BIS compliant products, covering the application, the import justification, follow-ups with the authorities and support through customs clearance.",
+      ],
+      whyItMatters: [
+        "Enables the legal import of non-BIS approved products",
+        "Prevents shipment delays and customs hold-ups",
+        "Ensures compliance with BIS and DPIIT regulations",
+        "Facilitates import for R&D and industrial use",
+        "Reduces the risk of penalties and confiscation",
+      ],
+      industries: [
+        "Electrical Appliances",
+        "Steel & Construction Materials",
+        "Machinery & Industrial Equipment",
+        "Consumer Goods under Mandatory BIS Certification",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "DPIIT" },
+      { label: "Governed By", value: "BIS QCOs & Foreign Trade Policy" },
+      { label: "Purpose", value: "Lawful Import of Non-BIS Products" },
+      { label: "Typical Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Cases Covered", value: "R&D, Capital Goods, Small Quantities" },
+      { label: "Customs Support", value: "Included", badge: "green" },
+      { label: "Key Document", value: "End-Use Declaration" },
+    ],
+
+    stats: [
+      { value: "5", label: "Process Steps" },
+      { value: "5", label: "Common Use Cases" },
+      { value: "4", label: "Product Groups" },
+      { value: "End-to-End", label: "Support" },
+    ],
+
+    features: [
+      "QCO Exemption Route",
+      "Customs Clearance Support",
+      "Government Liaison",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🔎",
+        title: "Product Assessment",
+        description:
+          "We evaluate your product category under BIS and QCO applicability, using the product specifications.",
+      },
+      {
+        step: 2,
+        icon: "🧭",
+        title: "Compliance Strategy",
+        description:
+          "We identify the exemption route that applies to your import.",
+      },
+      {
+        step: 3,
+        icon: "📝",
+        title: "Documentation Preparation",
+        description:
+          "We draft the application, the import justification and the supporting documents.",
+      },
+      {
+        step: 4,
+        icon: "📤",
+        title: "Application Submission",
+        description:
+          "The application is filed with DPIIT through the appropriate channels.",
+      },
+      {
+        step: 5,
+        icon: "✅",
+        title: "Follow-ups & Approval",
+        description:
+          "We coordinate regularly with the authorities so that the NOC is issued on time.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "📦",
+        title: "Lawful Import",
+        description:
+          "Import non-BIS certified products legally under the applicable exemptions or conditions.",
+      },
+      {
+        icon: "⏱️",
+        title: "No Customs Hold-ups",
+        description:
+          "A valid NOC helps prevent shipment delays and customs holds.",
+      },
+      {
+        icon: "⚖️",
+        title: "Regulatory Compliance",
+        description:
+          "Stay compliant with BIS and DPIIT regulations as well as customs requirements.",
+      },
+      {
+        icon: "🔬",
+        title: "R&D & Industrial Use",
+        description:
+          "Facilitates imports for R&D, testing, evaluation, and capital goods meant for internal use.",
+      },
+      {
+        icon: "🛡️",
+        title: "Lower Penalty Risk",
+        description:
+          "Reduces the risk of penalties and confiscation of goods.",
+      },
+      {
+        icon: "🧠",
+        title: "Strategic Approach",
+        description:
+          "Identifying the right exemption route increases your chances of approval.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company & Import Documents",
+        items: [
+          "Covering Letter",
+          "Company KYC Details",
+          "Invoice / Purchase Order",
+          "End-Use Declaration",
+        ],
+      },
+      {
+        groupLabel: "Product & Technical Documents",
+        items: [
+          "Product Details & Technical Specifications",
+          "Mill Test Certification / Test Report",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "The exact documents depend on the product and the reason for import. We review your case and give you a precise checklist.",
+
+    faqs: [
+      {
+        question: "When is a DPIIT NOC required?",
+        answer:
+          "Typically for importing BIS QCO-covered products without BIS certification, for R&D, testing or evaluation, for capital goods or machinery for internal use (not for sale), for small project-specific quantities, and for temporary or one-time consignments.",
+      },
+      {
+        question: "Which rules govern the import of non-BIS products?",
+        answer:
+          "BIS Quality Control Orders (QCOs), the Foreign Trade Policy (FTP), guidelines issued by DPIIT and related ministries, and customs compliance requirements.",
+      },
+      {
+        question: "Which products may need a DPIIT NOC?",
+        answer:
+          "Electrical appliances, steel and construction materials, machinery and industrial equipment, and consumer goods that fall under mandatory BIS certification.",
+      },
+      {
+        question: "Can you help with customs clearance as well?",
+        answer:
+          "Yes. We guide you on using the NOC for customs clearance, coordinate with your CHA and customs authorities, and advise on post-import compliance.",
+      },
+      {
+        question: "What does your service include?",
+        answer:
+          "NOC application and approval, regulatory advisory, documentation and justification support, government liaison, and customs and compliance support.",
+      },
+    ],
+
+    cta: {
+      title: "Import Non-BIS Products with Confidence",
+      description:
+        "Get the right regulatory approvals and clear your shipments without hassle. Contact our experts for DPIIT NOC assistance.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 7. NOC FROM MEITY
+  // ───────────────────────────────────────────────────────────
+  "meity-noc": {
+    id: "meity-noc",
+    category: "NOC / MeitY",
+    title: "NOC from MeitY",
+    subtitle: "Non-Applicability of BIS CRS",
+    shortDescription:
+      "An official clarification from MeitY that your electronics product does not fall under BIS CRS or is exempt, so that your shipment can clear customs without delay.",
+
+    glance: [
+      { label: "Authority", value: "Ministry of Electronics & IT" },
+      { label: "Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Purpose", value: "BIS CRS Non-applicability" },
+      { label: "Key Use", value: "Customs Release", badge: "green" },
+      { label: "Basis", value: "Technical Justification" },
+      { label: "Our Support", value: "Application to Clearance" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "The import of electronics and IT goods into India is governed by the mandatory BIS Compulsory Registration Scheme (CRS). In many cases, however, a product may not fall under BIS applicability or may qualify for an exemption. In such situations, importers need a formal clarification or No Objection Certificate (NOC) from the Ministry of Electronics and Information Technology (MeitY) for smooth customs clearance.",
+        "A MeitY NOC is an official clarification stating that a particular product does not fall under BIS CRS requirements or is exempt from mandatory certification. Customs authorities often ask for it to release shipments that were flagged for BIS compliance but are technically non-applicable.",
+      ],
+      whyItMatters: [
+        "Smooth customs clearance without BIS-related delays",
+        "Avoids demurrage, detention and shipment losses",
+        "Legal confirmation of non-applicability",
+        "Faster resolution of customs queries",
+        "Reduced compliance risk",
+      ],
+      industries: [
+        "IT & Networking Equipment",
+        "Industrial Electronics",
+        "Embedded Systems & Components",
+        "Telecom Equipment",
+        "Power & Control Devices",
+        "Specialised Machinery with Electronic Components",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "MeitY" },
+      { label: "Related Scheme", value: "BIS CRS" },
+      { label: "Nature", value: "Non-Applicability / Exemption NOC" },
+      { label: "Typical Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Customs Use", value: "Release of Flagged Shipments", badge: "green" },
+      { label: "Basis", value: "Technical Justification" },
+      { label: "Classification", value: "HS Code Support" },
+    ],
+
+    stats: [
+      { value: "4", label: "Process Steps" },
+      { value: "6", label: "Common Situations" },
+      { value: "6", label: "Product Groups" },
+      { value: "Fast-Track", label: "For Urgent Shipments" },
+    ],
+
+    features: [
+      "Technical Evaluation",
+      "Customs Clearance Support",
+      "Government Liaison",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🔎",
+        title: "Product Assessment",
+        description:
+          "We evaluate your product specifications and BIS applicability for the product.",
+      },
+      {
+        step: 2,
+        icon: "📝",
+        title: "Documentation Preparation",
+        description:
+          "We draft the technical justification and the required documents.",
+      },
+      {
+        step: 3,
+        icon: "📤",
+        title: "Application Submission",
+        description:
+          "The NOC request is filed with MeitY.",
+      },
+      {
+        step: 4,
+        icon: "✅",
+        title: "Follow-ups & Approval",
+        description:
+          "We coordinate actively with the authorities for a quick resolution.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🚚",
+        title: "Smooth Customs Clearance",
+        description:
+          "Get your goods released without BIS-related delays.",
+      },
+      {
+        icon: "💰",
+        title: "Avoid Extra Costs",
+        description:
+          "Avoid demurrage, detention and shipment losses caused by holds at customs.",
+      },
+      {
+        icon: "📜",
+        title: "Legal Confirmation",
+        description:
+          "Official confirmation that your product is not covered by BIS CRS or is exempt.",
+      },
+      {
+        icon: "⚡",
+        title: "Faster Query Resolution",
+        description:
+          "Customs queries and objections are resolved faster with the NOC in hand.",
+      },
+      {
+        icon: "🛡️",
+        title: "Reduced Compliance Risk",
+        description:
+          "A documented non-applicability position lowers your regulatory risk.",
+      },
+      {
+        icon: "🔧",
+        title: "Technical Expertise",
+        description:
+          "Our team understands electronic products, HS code classification and BIS CRS coverage.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company & Customs Documents",
+        items: [
+          "Covering Letter",
+          "Company KYC Documents",
+          "Invoice / Packing List (if available)",
+          "End-Use Declaration",
+          "Previous Communication with Customs (if any)",
+        ],
+      },
+      {
+        groupLabel: "Product Documents",
+        items: [
+          "Product Datasheet / Technical Specifications",
+          "Product Images",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Supporting documents such as the technical write-up and a comparison with BIS-notified categories strengthen the case. We prepare these for you.",
+
+    faqs: [
+      {
+        question: "When do I need a MeitY NOC?",
+        answer:
+          "When your product is not covered under BIS CRS but customs has raised a query, for specialised or industrial-use electronic equipment, components, sub-assemblies or spare parts, R&D, testing or captive use, shipments held due to BIS objections, and cases of ambiguity in product classification.",
+      },
+      {
+        question: "What exactly does a MeitY NOC certify?",
+        answer:
+          "It states that a particular product does not fall under BIS CRS requirements or is exempt from mandatory certification.",
+      },
+      {
+        question: "Which products commonly need this NOC?",
+        answer:
+          "IT and networking equipment, industrial electronics, embedded systems and components, telecom equipment, power and control devices, and specialised machinery with electronic components.",
+      },
+      {
+        question: "Can you help if my shipment is already held at customs?",
+        answer:
+          "Yes. We offer fast-track handling of urgent shipments, help submit the NOC to customs, coordinate with your CHA and guide you on handling objections.",
+      },
+      {
+        question: "What does your service include?",
+        answer:
+          "NOC drafting and submission, technical evaluation and HS code classification support, documentation and justification, liaison with MeitY, and customs clearance support.",
+      },
+    ],
+
+    cta: {
+      title: "Get Your Shipment Cleared Without Delays",
+      description:
+        "Avoid unnecessary compliance hurdles and clear your imports on time. Contact us to obtain a MeitY NOC for non-applicability of BIS.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 8. NOC FROM MINISTRY OF CHEMICALS & FERTILIZERS
+  // ───────────────────────────────────────────────────────────
+  "chemicals-fertilizers-noc": {
+    id: "chemicals-fertilizers-noc",
+    category: "NOC / Chemicals & Fertilizers",
+    title: "NOC from Ministry of Chemicals & Fertilizers",
+    subtitle: "Chemical & Fertilizer Import Approvals",
+    shortDescription:
+      "A No Objection Certificate for the import of regulated chemicals, fertilizers and related raw materials, and for project approvals involving chemical usage.",
+
+    glance: [
+      { label: "Authority", value: "Ministry of Chemicals & Fertilizers" },
+      { label: "Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Key Regulation", value: "Fertilizer Control Order (FCO)" },
+      { label: "Key Use", value: "Import & Customs Clearance", badge: "green" },
+      { label: "Covers", value: "Chemicals & Fertilizers" },
+      { label: "Our Support", value: "End-to-End" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "The import, manufacture and distribution of certain chemicals and fertilizers in India are subject to regulatory controls that ensure safety, quality and environmental compliance. In specific cases, businesses must obtain a No Objection Certificate (NOC) from the Ministry of Chemicals and Fertilizers for smooth import, customs clearance or project approvals.",
+        "We provide end-to-end assistance in obtaining these NOC approvals, so that you comply with the applicable regulations and your application moves smoothly through the government authorities.",
+      ],
+      whyItMatters: [
+        "Ensures compliance with chemical and fertilizer regulations",
+        "Prevents shipment delays and customs issues",
+        "Facilitates smooth import and project approvals",
+        "Reduces the risk of penalties or rejection",
+        "Supports the safe and lawful handling of chemicals",
+      ],
+      industries: [
+        "Industrial Chemicals",
+        "Specialty Chemicals",
+        "Fertilizers & Agrochemicals",
+        "Chemical Raw Materials",
+        "Intermediates & Compounds",
+        "Bulk & Hazardous Chemicals",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "Ministry of Chemicals & Fertilizers" },
+      { label: "Key Regulation", value: "Fertilizer Control Order (FCO)" },
+      { label: "Also Governed By", value: "Foreign Trade Policy (FTP)" },
+      { label: "Typical Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Covers", value: "Import, Projects & Compliance" },
+      { label: "Safety Data Sheet", value: "Required", badge: "green" },
+      { label: "Customs Support", value: "Included" },
+    ],
+
+    stats: [
+      { value: "5", label: "Process Steps" },
+      { value: "7", label: "Common Situations" },
+      { value: "6", label: "Product Groups" },
+      { value: "End-to-End", label: "Support" },
+    ],
+
+    features: [
+      "FCO & Safety Compliance",
+      "Customs Clearance Support",
+      "Government Liaison",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🔎",
+        title: "Product Evaluation",
+        description:
+          "We assess the chemical category and regulatory requirements as per your product specification.",
+      },
+      {
+        step: 2,
+        icon: "🧭",
+        title: "Compliance Strategy",
+        description:
+          "We identify the approval route and documentation needs.",
+      },
+      {
+        step: 3,
+        icon: "📝",
+        title: "Documentation Preparation",
+        description:
+          "We draft the application, technical details and declarations.",
+      },
+      {
+        step: 4,
+        icon: "📤",
+        title: "Application Submission",
+        description:
+          "The NOC request is filed with the ministry.",
+      },
+      {
+        step: 5,
+        icon: "✅",
+        title: "Follow-ups & Approval",
+        description:
+          "We coordinate continuously until the approval is granted.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "⚖️",
+        title: "Regulatory Compliance",
+        description:
+          "Stay compliant with chemical and fertilizer regulations, including the Fertilizer Control Order.",
+      },
+      {
+        icon: "⏱️",
+        title: "Fewer Shipment Delays",
+        description:
+          "Prevents holds and issues at customs caused by regulatory queries.",
+      },
+      {
+        icon: "🏗️",
+        title: "Smooth Project Approvals",
+        description:
+          "Facilitates imports and project approvals that involve chemical usage.",
+      },
+      {
+        icon: "🛡️",
+        title: "Lower Risk",
+        description:
+          "Reduces the risk of penalties or rejection of your consignment.",
+      },
+      {
+        icon: "🧪",
+        title: "Safe Handling",
+        description:
+          "Supports the safe and lawful handling of chemicals.",
+      },
+      {
+        icon: "📑",
+        title: "Accurate Documentation",
+        description:
+          "Technical documents and safety data are prepared accurately to support your case.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company & Import Documents",
+        items: [
+          "Covering Letter",
+          "Company KYC Details",
+          "Invoice / Purchase Order",
+          "End-Use Declaration",
+        ],
+      },
+      {
+        groupLabel: "Product & Safety Documents",
+        items: [
+          "Product Details & Technical Specifications",
+          "Safety Data Sheet (SDS/MSDS)",
+          "Test Certificates (if available)",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "The documents needed depend on the type of chemical and the purpose of import. We confirm the exact list after assessing your product.",
+
+    faqs: [
+      {
+        question: "When is an NOC from the Ministry of Chemicals & Fertilizers required?",
+        answer:
+          "For the import of restricted or regulated chemicals, non-BIS approved chemicals, fertilizers or raw materials for fertilizer production, specialty chemicals for industrial use, project approvals involving chemical usage, and shipments held at customs due to regulatory queries.",
+      },
+      {
+        question: "Which regulations apply?",
+        answer:
+          "The Fertilizer Control Order (FCO), environmental and safety regulations, import policies under the Foreign Trade Policy (FTP), and guidelines issued by the relevant departments under the ministry.",
+      },
+      {
+        question: "Which products may need this NOC?",
+        answer:
+          "Industrial and specialty chemicals, fertilizers and agrochemicals, chemical raw materials, intermediates and compounds, and bulk and hazardous chemicals.",
+      },
+      {
+        question: "Can you help with a shipment held at customs?",
+        answer:
+          "Yes. We support the resolution of shipment holds and coordinate with customs and your CHA to ensure smooth clearance using the NOC.",
+      },
+      {
+        question: "What does your service include?",
+        answer:
+          "NOC application and approval, regulatory advisory on FCO and related rules, documentation and compliance support, government liaison, and customs clearance assistance.",
+      },
+    ],
+
+    cta: {
+      title: "Get Your Chemical & Fertilizer NOC",
+      description:
+        "Ensure your chemical and fertilizer imports meet all regulatory requirements without delays. Contact us for NOC assistance and smooth customs clearance.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 9. NOC FROM MINISTRY OF STEEL
+  // ───────────────────────────────────────────────────────────
+  "steel-noc": {
+    id: "steel-noc",
+    category: "NOC / Ministry of Steel",
+    title: "NOC from Ministry of Steel",
+    subtitle: "Steel Import & Quality Control Compliance",
+    shortDescription:
+      "A No Objection Certificate from the Ministry of Steel for the import, manufacture, trade or use of regulated steel and steel-related products.",
+
+    glance: [
+      { label: "Authority", value: "Ministry of Steel, Govt. of India" },
+      { label: "Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Framework", value: "Quality Control Orders (QCOs)" },
+      { label: "Key Use", value: "Import & Project Approvals", badge: "green" },
+      { label: "Scrutiny", value: "Technical Committee" },
+      { label: "Our Support", value: "End-to-End" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "A No Objection Certificate (NOC) from the Ministry of Steel, Government of India, is an important approval required for specific activities involving the import, manufacturing, trading or use of steel and steel-related products. It is issued by the Ministry in coordination with the relevant regulatory bodies and quality control authorities.",
+        "The NOC ensures that materials comply with quality control standards, regulatory requirements and national policies governing the steel sector. We provide end-to-end assistance in obtaining it, so that your approval process is smooth, compliant and time-efficient.",
+      ],
+      whyItMatters: [
+        "Ensures compliance with national steel policies",
+        "Prevents import delays and regulatory issues",
+        "Facilitates smooth customs clearance",
+        "Enhances operational efficiency",
+        "Reduces the risk of penalties and rejection",
+      ],
+      industries: [
+        "Structural Steel Products",
+        "Steel Pipes & Tubes",
+        "Stainless Steel Products",
+        "Alloy Steel Materials",
+        "Coated & Galvanised Steel",
+        "Specialised Engineering Steel",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "Ministry of Steel" },
+      { label: "Framework", value: "Quality Control Orders (QCOs)" },
+      { label: "Scrutiny", value: "Technical Committee" },
+      { label: "Typical Timeline", value: "Varies by Case", badge: "amber" },
+      { label: "Import Export Code", value: "Required", badge: "green" },
+      { label: "Key Document", value: "Mill Test Certificate" },
+      { label: "Customs Documents", value: "Bill of Lading / Entry" },
+    ],
+
+    stats: [
+      { value: "6", label: "Process Steps" },
+      { value: "5", label: "Common Situations" },
+      { value: "6", label: "Steel Product Groups" },
+      { value: "End-to-End", label: "Support" },
+    ],
+
+    features: [
+      "QCO Compliance",
+      "Technical Scrutiny Support",
+      "Government Liaison",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🔎",
+        title: "Requirement Assessment",
+        description:
+          "We evaluate your product category, import details and regulatory applicability.",
+      },
+      {
+        step: 2,
+        icon: "📝",
+        title: "Documentation Preparation",
+        description:
+          "We compile the technical and regulatory documents.",
+      },
+      {
+        step: 3,
+        icon: "📤",
+        title: "Application Submission",
+        description:
+          "The NOC application is filed with the Ministry.",
+      },
+      {
+        step: 4,
+        icon: "🧐",
+        title: "Scrutiny of Application",
+        description:
+          "A technical committee scrutinises the application.",
+      },
+      {
+        step: 5,
+        icon: "🤝",
+        title: "Follow-ups & Coordination",
+        description:
+          "We interact regularly with the authorities to move your approval along.",
+      },
+      {
+        step: 6,
+        icon: "✅",
+        title: "Approval & Certification",
+        description:
+          "The NOC is issued.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🏛️",
+        title: "Policy Compliance",
+        description:
+          "Your imports and operations stay in line with national steel policies.",
+      },
+      {
+        icon: "⏱️",
+        title: "Fewer Import Delays",
+        description:
+          "Prevents regulatory issues that hold up your steel consignments.",
+      },
+      {
+        icon: "🚚",
+        title: "Smooth Customs Clearance",
+        description:
+          "A valid NOC supports clearance of regulated steel products.",
+      },
+      {
+        icon: "⚙️",
+        title: "Operational Efficiency",
+        description:
+          "Timely approvals help keep your projects and supply chain on schedule.",
+      },
+      {
+        icon: "🛡️",
+        title: "Lower Penalty Risk",
+        description:
+          "Reduces the risk of penalties and rejection.",
+      },
+      {
+        icon: "🧩",
+        title: "Integrated Compliance",
+        description:
+          "We align the NOC with BIS and other certification requirements and support related approvals.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company & Import Documents",
+        items: [
+          "Covering Letter",
+          "Company KYC Details",
+          "Import Export Code (IEC)",
+          "Purchase Orders / Invoice Details",
+          "Bill of Lading / Bill of Entry",
+          "End-Use Declaration (if applicable)",
+        ],
+      },
+      {
+        groupLabel: "Product & Quality Documents",
+        items: [
+          "Product Specifications & Technical Details (Mill Test Certificate)",
+          "Test Report / Quality Certificates",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Document requirements depend on the steel product and the nature of the import. We review your case and confirm the exact list before filing.",
+
+    faqs: [
+      {
+        question: "When is an NOC from the Ministry of Steel required?",
+        answer:
+          "For the import of steel and steel products under regulated categories, compliance with Quality Control Orders (QCOs), project approvals with large-scale steel consumption, specific steel grades in infrastructure or industrial projects, and clearance for restricted or specialised steel materials.",
+      },
+      {
+        question: "Which steel products are covered?",
+        answer:
+          "Structural steel, steel pipes and tubes, stainless steel, alloy steel, coated and galvanised steel, specialised engineering steel, and other types of steel.",
+      },
+      {
+        question: "Who issues the NOC?",
+        answer:
+          "The Ministry of Steel, in coordination with the relevant regulatory bodies and quality control authorities.",
+      },
+      {
+        question: "Who reviews the application?",
+        answer:
+          "A technical committee scrutinises the application before approval and issuance of the NOC.",
+      },
+      {
+        question: "What does your service include?",
+        answer:
+          "NOC application and approval, regulatory advisory on QCOs, documentation support, liaison and representation, and compliance integration with BIS and other requirements.",
+      },
+    ],
+
+    cta: {
+      title: "Get Your Ministry of Steel NOC",
+      description:
+        "Make sure your steel-related operations meet every regulatory requirement. Contact our experts for seamless assistance with the NOC.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 10. PESO CERTIFICATION
+  // ───────────────────────────────────────────────────────────
+  "peso-certification": {
+    id: "peso-certification",
+    category: "PESO",
+    title: "PESO Certification",
+    subtitle: "Petroleum & Explosives Safety Organization Approval",
+    shortDescription:
+      "Mandatory safety approval for equipment, storage, handling and transport of petroleum, explosives, compressed gases and hazardous substances.",
+
+    glance: [
+      { label: "Authority", value: "PESO (under DPIIT)" },
+      { label: "Timeline", value: "2–4 Months", badge: "amber" },
+      { label: "Mandatory?", value: "Yes — Regulated Products", badge: "green" },
+      { label: "Approval Types", value: "Manufacturing, Import, Design, Site" },
+      { label: "Licence Validity", value: "1 Year (Storage / Usage)", badge: "amber" },
+      { label: "Inspection", value: "Testing / Inspection if Required" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "PESO Certification is a mandatory approval issued by the Petroleum and Explosives Safety Organization, which functions under the Department for Promotion of Industry and Internal Trade. PESO regulates and approves equipment, storage, handling and transportation related to petroleum, explosives, compressed gases and hazardous substances, to ensure safety and compliance in India.",
+        "Manufacturers, importers and users must obtain PESO approval before dealing with regulated products. The certification process involves technical scrutiny and safety evaluation to prevent accidents and hazards.",
+      ],
+      whyItMatters: [
+        "Legal authorisation for handling hazardous materials",
+        "Ensures safety compliance with Indian regulations",
+        "Reduces the risk of accidents and liabilities",
+        "Enhances credibility and trust",
+        "Enables smooth import and market entry",
+      ],
+      industries: [
+        "Pressure Vessels & Gas Cylinders",
+        "LPG, CNG & LNG Equipment",
+        "Petroleum Storage & Dispensing",
+        "Explosives & Fireworks",
+        "Flameproof Electrical Equipment",
+        "Tank Trucks & Transport Vessels",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "PESO" },
+      { label: "Parent Department", value: "DPIIT" },
+      { label: "Approval Types", value: "Manufacturing, Import, Design, Site" },
+      { label: "Typical Timeline", value: "2–4 Months", badge: "amber" },
+      { label: "Design Approval", value: "Valid unless design changes" },
+      { label: "Import Approval", value: "Often 1–3 Years", badge: "amber" },
+      { label: "Storage / Usage Licence", value: "1 Year, Renewable", badge: "green" },
+      { label: "Renewal", value: "Mandatory" },
+    ],
+
+    stats: [
+      { value: "2–4", label: "Months Typical Timeline" },
+      { value: "4", label: "Types of Approval" },
+      { value: "5", label: "Process Steps" },
+      { value: "1 Year", label: "Storage Licence Validity" },
+    ],
+
+    features: [
+      "Hazardous Materials Safety",
+      "Technical Scrutiny",
+      "Import & Manufacturing Approval",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "📄",
+        title: "Application Filing",
+        description:
+          "The application is submitted along with the technical documents.",
+      },
+      {
+        step: 2,
+        icon: "🔍",
+        title: "Document Evaluation",
+        description:
+          "PESO reviews your drawings, specifications and safety compliance.",
+      },
+      {
+        step: 3,
+        icon: "🔬",
+        title: "Prototype Testing / Inspection",
+        description:
+          "The product is tested or the manufacturing facility is inspected, if required.",
+      },
+      {
+        step: 4,
+        icon: "💬",
+        title: "Query Resolution",
+        description:
+          "We handle the clarifications and modifications required by PESO.",
+      },
+      {
+        step: 5,
+        icon: "✅",
+        title: "Grant of Approval",
+        description:
+          "The PESO certificate or licence is issued.",
+      },
+      {
+        step: 6,
+        icon: "🔄",
+        title: "Renewal & Post-Approval Support",
+        description:
+          "Licences are renewable and renewal is mandatory for continued compliance. We assist with renewals and post-approval needs.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "⚖️",
+        title: "Legal Authorisation",
+        description:
+          "Approval allows you to handle hazardous materials and regulated equipment lawfully.",
+      },
+      {
+        icon: "🦺",
+        title: "Safety Compliance",
+        description:
+          "Ensures your products and systems meet strict safety standards under Indian regulations.",
+      },
+      {
+        icon: "🚫",
+        title: "Lower Accident Risk",
+        description:
+          "Reduces the risk of accidents and associated liabilities.",
+      },
+      {
+        icon: "⭐",
+        title: "Credibility & Trust",
+        description:
+          "PESO approval enhances your credibility with customers and regulators.",
+      },
+      {
+        icon: "🌏",
+        title: "Import & Market Entry",
+        description:
+          "Enables smooth import and entry into regulated sectors in India.",
+      },
+      {
+        icon: "🏭",
+        title: "Full Range of Approvals",
+        description:
+          "Manufacturing, import, design and site / storage approvals are all covered.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Application & Company Documents",
+        items: [
+          "Application Form and Covering Letter",
+          "Manufacturing Details and Factory Licence",
+          "Quality Assurance Plan",
+          "Authorisation Letter (for importers)",
+        ],
+      },
+      {
+        groupLabel: "Technical & Safety Documents",
+        items: [
+          "Technical Drawings and Design Documents",
+          "Material Specifications",
+          "Test Certificates and Reports",
+          "Explosion-Proof Certification (if applicable)",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Documentation requirements are technical and differ by product and approval type. Complex or high-risk products may take longer depending on scrutiny.",
+
+    faqs: [
+      {
+        question: "Which products and activities need PESO approval?",
+        answer:
+          "Pressure vessels and gas cylinders, LPG, CNG and LNG equipment, petroleum storage tanks and dispensing units, explosives and fireworks, flameproof electrical equipment for hazardous areas, and tank trucks and transport vessels.",
+      },
+      {
+        question: "What types of PESO approvals are there?",
+        answer:
+          "Manufacturing Approval, Import Approval, Design Approval, and Site Approval / Storage Licence.",
+      },
+      {
+        question: "How long does PESO certification take?",
+        answer:
+          "About 2–4 months in total: documentation (2–4 weeks), filing (1 week), technical evaluation and queries (3–8 weeks), testing or inspection if required (2–6 weeks) and grant (2–3 weeks).",
+      },
+      {
+        question: "How long is a PESO approval valid?",
+        answer:
+          "Design approvals are generally valid unless the design changes. Import approvals are often valid for 1–3 years, depending on the approval type. Storage and usage licences are usually valid for 1 year and renewable annually.",
+      },
+      {
+        question: "What are common challenges in PESO approval?",
+        answer:
+          "Complex technical documentation, design modifications to meet PESO standards, delays in inspection and testing, understanding hazardous area classifications, and coordination with multiple authorities.",
+      },
+    ],
+
+    cta: {
+      title: "Get PESO Certification Hassle-Free",
+      description:
+        "PESO approval is essential for handling hazardous materials and entering regulated sectors in India. Our specialists guide you from assessment to approval.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 11. SASO CERTIFICATION
+  // ───────────────────────────────────────────────────────────
+  "saso-certification": {
+    id: "saso-certification",
+    category: "SASO",
+    title: "SASO Certification",
+    subtitle: "Product Approval for Exports to Saudi Arabia",
+    shortDescription:
+      "Conformity assessment and product approval under the Saudi Standards, Metrology and Quality Organization, required to clear Saudi customs and sell in the market.",
+
+    glance: [
+      { label: "Authority", value: "SASO (Saudi Arabia)" },
+      { label: "Timeline", value: "2–4 Weeks", badge: "amber" },
+      { label: "Platform", value: "SABER Online System" },
+      { label: "Mandatory?", value: "Yes — For Exports to Saudi Arabia", badge: "green" },
+      { label: "Product Certificate (PCoC)", value: "Valid 1 Year", badge: "amber" },
+      { label: "Shipment Certificate (SCoC)", value: "Single Shipment" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "SASO Certification refers to the conformity assessment and product approval process governed by the Saudi Standards, Metrology and Quality Organization. It ensures that products exported to Saudi Arabia comply with the applicable Saudi technical regulations, standards and safety requirements.",
+        "SASO certification is mandatory for a wide range of products before they can be cleared through Saudi customs and sold in the market. It runs through the SABER online system, which issues a Product Certificate of Conformity (PCoC) for each product type and a Shipment Certificate of Conformity (SCoC) for each shipment. Both are essential for customs clearance.",
+      ],
+      whyItMatters: [
+        "Mandatory for exporting products to Saudi Arabia",
+        "Ensures compliance with Saudi technical regulations",
+        "Smooth customs clearance through the SABER platform",
+        "Enhances product credibility and acceptance",
+        "Reduces the risk of rejection or shipment delays",
+      ],
+      industries: [
+        "Electrical & Electronic Products",
+        "Automotive Products & Spare Parts",
+        "Construction Materials",
+        "Textiles & Consumer Goods",
+        "Machinery & Industrial Equipment",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "SASO (via SABER)" },
+      { label: "Market", value: "Saudi Arabia" },
+      { label: "Certificates", value: "PCoC & SCoC" },
+      { label: "Typical Timeline", value: "2–4 Weeks", badge: "amber" },
+      { label: "PCoC Validity", value: "1 Year", badge: "amber" },
+      { label: "SCoC Validity", value: "Single Shipment Only" },
+      { label: "Renewal", value: "PCoC Annually", badge: "green" },
+      { label: "Testing", value: "If Required" },
+    ],
+
+    stats: [
+      { value: "2–4", label: "Weeks Typical Timeline" },
+      { value: "2", label: "Certificates (PCoC & SCoC)" },
+      { value: "1 Year", label: "PCoC Validity" },
+      { value: "6", label: "Process Steps" },
+    ],
+
+    features: [
+      "SABER Portal Management",
+      "Customs Clearance Compliance",
+      "Product & Shipment Certificates",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "💻",
+        title: "Product Registration on SABER",
+        description:
+          "Your product details are registered on the SABER portal.",
+      },
+      {
+        step: 2,
+        icon: "🏢",
+        title: "Selection of Conformity Assessment Body (CAB)",
+        description:
+          "An approved body is selected to evaluate your product's compliance.",
+      },
+      {
+        step: 3,
+        icon: "📄",
+        title: "Document Submission",
+        description:
+          "Technical documents and test reports are submitted.",
+      },
+      {
+        step: 4,
+        icon: "🔬",
+        title: "Product Evaluation",
+        description:
+          "The documents are reviewed and testing is carried out, if required.",
+      },
+      {
+        step: 5,
+        icon: "✅",
+        title: "Issuance of PCoC",
+        description:
+          "The Product Certificate of Conformity is issued after successful evaluation.",
+      },
+      {
+        step: 6,
+        icon: "🚢",
+        title: "Shipment Certification (SCoC)",
+        description:
+          "A shipment-specific certificate is issued before export to Saudi Arabia.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🌍",
+        title: "Saudi Market Access",
+        description:
+          "Mandatory for exporting a wide range of products to Saudi Arabia.",
+      },
+      {
+        icon: "📜",
+        title: "Regulatory Compliance",
+        description:
+          "Confirms compliance with Saudi technical regulations and standards.",
+      },
+      {
+        icon: "🚚",
+        title: "Smooth Customs Clearance",
+        description:
+          "PCoC and SCoC issued through SABER are essential for clearing Saudi customs.",
+      },
+      {
+        icon: "⭐",
+        title: "Product Credibility",
+        description:
+          "Certification enhances your product's acceptance in the Saudi market.",
+      },
+      {
+        icon: "🛡️",
+        title: "Lower Rejection Risk",
+        description:
+          "Reduces the risk of rejection or shipment delays.",
+      },
+      {
+        icon: "⚡",
+        title: "Quick Turnaround",
+        description:
+          "Typically completed in 2–4 weeks, depending on product complexity and testing needs.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Shipment & Product Documents",
+        items: [
+          "Commercial Invoice and Packing List",
+          "Product Description and HS Code",
+          "Manufacturer Declaration",
+          "Labelling and Marking Details",
+        ],
+      },
+      {
+        groupLabel: "Technical & Quality Documents",
+        items: [
+          "Test Reports (IEC / ISO / SASO Standards)",
+          "Technical File and Specifications",
+          "Quality Certificates (ISO, if applicable)",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Timelines and testing requirements depend on your product category and document readiness. Correct HS code classification and compliant test reports are essential.",
+
+    faqs: [
+      {
+        question: "What are PCoC and SCoC?",
+        answer:
+          "The Product Certificate of Conformity (PCoC) is issued for each product type, and the Shipment Certificate of Conformity (SCoC) is issued for each shipment before export. Both are needed for customs clearance.",
+      },
+      {
+        question: "How long is a SASO certificate valid?",
+        answer:
+          "A PCoC is valid for 1 year and must be renewed annually for continuous exports. An SCoC is valid for a single shipment only.",
+      },
+      {
+        question: "How long does SASO certification take?",
+        answer:
+          "Typically 2–4 weeks: SABER registration (1–3 days), document preparation and submission (1–2 weeks), CAB evaluation (1–2 weeks), PCoC issuance (3–7 days) and SCoC (2–5 days).",
+      },
+      {
+        question: "Which products need SASO certification?",
+        answer:
+          "Electrical and electronic products, automotive products and spare parts, construction materials, textiles and consumer goods, and machinery and industrial equipment.",
+      },
+      {
+        question: "What are common reasons for delay?",
+        answer:
+          "Incorrect product classification or HS code, non-compliant test reports, delays in SABER registration, documentation errors, and coordination with conformity assessment bodies.",
+      },
+    ],
+
+    cta: {
+      title: "Export to Saudi Arabia with Confidence",
+      description:
+        "SASO certification is essential for successful market entry into Saudi Arabia. We manage SABER registration, coordination and certificates end to end.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 12. STQC CERTIFICATION
+  // ───────────────────────────────────────────────────────────
+  "stqc-certification": {
+    id: "stqc-certification",
+    category: "STQC",
+    title: "STQC Certification",
+    subtitle: "Standardisation Testing & Quality Certification",
+    shortDescription:
+      "Quality, security and performance certification for IT products, electronic systems and e-Governance solutions, issued by the STQC Directorate under MeitY.",
+
+    glance: [
+      { label: "Authority", value: "STQC Directorate, MeitY" },
+      { label: "Timeline", value: "Varies by Product", badge: "amber" },
+      { label: "Mandatory?", value: "For Certain Govt. Projects", badge: "green" },
+      { label: "Testing", value: "STQC-approved Labs" },
+      { label: "Covers", value: "Hardware, Software, Security" },
+      { label: "Open To", value: "Private Companies", badge: "green" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "STQC Certification is a quality assurance and testing certification system issued by the STQC Directorate under the Ministry of Electronics and Information Technology (MeitY), Government of India. It validates electronic products, software systems and IT services against national and international standards for quality, security and performance.",
+        "STQC is widely recognised for enhancing the reliability, security and compliance of ICT products and services used across government and critical infrastructure systems in India. It is especially important for organisations that supply to government departments, public sector undertakings (PSUs) and critical infrastructure projects.",
+      ],
+      whyItMatters: [
+        "Eligibility for government and PSU tenders",
+        "Assured product quality and reliability",
+        "Compliance with national ICT standards",
+        "Improved cybersecurity assurance",
+        "Increased trust in critical infrastructure deployments",
+        "Competitive advantage in regulated markets",
+      ],
+      industries: [
+        "IT Hardware (Servers, Desktops, Laptops)",
+        "Software & e-Governance Platforms",
+        "Cyber Security Products",
+        "Smart Cards & Biometric Devices",
+        "CCTV & Surveillance Systems",
+        "Networking & Communication Equipment",
+        "Data Centre Infrastructure",
+        "Embedded & IoT-Based Systems",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "STQC Directorate" },
+      { label: "Parent Ministry", value: "MeitY, Govt. of India" },
+      { label: "Testing", value: "STQC-approved / Recognised Labs", badge: "green" },
+      { label: "Typical Timeline", value: "Varies by Product", badge: "amber" },
+      { label: "Mandatory For", value: "Certain Government Projects" },
+      { label: "Software Covered", value: "Yes" },
+      { label: "Private Companies", value: "Eligible to Apply" },
+      { label: "Key Focus", value: "Quality, Security, Performance" },
+    ],
+
+    stats: [
+      { value: "6", label: "Process Steps" },
+      { value: "8", label: "Product Categories" },
+      { value: "MeitY", label: "Government of India" },
+      { value: "End-to-End", label: "Support" },
+    ],
+
+    features: [
+      "Government Tender Eligibility",
+      "Security & Quality Assurance",
+      "Testing Coordination",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🔎",
+        title: "Requirement Analysis & Applicability Check",
+        description:
+          "We identify the STQC standards and guidelines that apply to your product.",
+      },
+      {
+        step: 2,
+        icon: "📝",
+        title: "Documentation Preparation",
+        description:
+          "We prepare technical files, system specifications and compliance documents.",
+      },
+      {
+        step: 3,
+        icon: "🔬",
+        title: "Product / System Testing",
+        description:
+          "Testing is carried out at STQC-approved labs for security, performance and reliability parameters.",
+      },
+      {
+        step: 4,
+        icon: "📤",
+        title: "Application Submission",
+        description:
+          "The application and required documents are submitted to the STQC Directorate.",
+      },
+      {
+        step: 5,
+        icon: "🧐",
+        title: "Audit & Evaluation",
+        description:
+          "STQC authorities carry out a technical review and assessment.",
+      },
+      {
+        step: 6,
+        icon: "✅",
+        title: "Grant of Certification",
+        description:
+          "The STQC certificate is issued on successful compliance.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "🏛️",
+        title: "Government Tender Eligibility",
+        description:
+          "Qualify to supply to government departments, PSUs and critical infrastructure projects.",
+      },
+      {
+        icon: "✅",
+        title: "Quality & Reliability",
+        description:
+          "Independent assurance of the quality and reliability of your product.",
+      },
+      {
+        icon: "📋",
+        title: "National ICT Compliance",
+        description:
+          "Compliance with national ICT standards and guidelines.",
+      },
+      {
+        icon: "🔐",
+        title: "Cybersecurity Assurance",
+        description:
+          "Improved confidence in the security of your products and systems.",
+      },
+      {
+        icon: "🌐",
+        title: "Trust in Critical Infrastructure",
+        description:
+          "Greater trust in deployments for critical infrastructure.",
+      },
+      {
+        icon: "📈",
+        title: "Competitive Advantage",
+        description:
+          "Stand out in regulated markets with an STQC-certified offering.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Application & Company Documents",
+        items: [
+          "Application and Covering Letter",
+          "Company Registration and KYC Documents",
+          "Compliance Documents",
+        ],
+      },
+      {
+        groupLabel: "Technical & Testing Documents",
+        items: [
+          "Technical Files",
+          "System Specifications",
+          "Test Reports from STQC-approved Labs",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "The exact documents depend on the product and the applicable STQC standard. We confirm this during the applicability check and give you a precise checklist.",
+
+    faqs: [
+      {
+        question: "Who issues STQC Certification?",
+        answer:
+          "It is issued by the STQC Directorate under the Ministry of Electronics and Information Technology (MeitY), Government of India.",
+      },
+      {
+        question: "Is STQC Certification mandatory?",
+        answer:
+          "It is mandatory for certain government projects, especially in IT, e-Governance and cybersecurity deployments.",
+      },
+      {
+        question: "Which products may need STQC Certification?",
+        answer:
+          "IT hardware, software systems, biometric devices, CCTV systems and cybersecurity solutions often require certification.",
+      },
+      {
+        question: "Where is testing done?",
+        answer:
+          "In STQC-approved or recognised laboratories.",
+      },
+      {
+        question: "Can private companies apply, and is software covered?",
+        answer:
+          "Yes to both. Private companies supplying to government or regulated sectors can apply, and software applications, especially for government and security use, are covered.",
+      },
+    ],
+
+    cta: {
+      title: "Get STQC Certified with Minimal Delays",
+      description:
+        "We manage documentation, coordinate testing and support regulatory approvals so that you can achieve certification smoothly and accurately.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 13. TEC CERTIFICATION
+  // ───────────────────────────────────────────────────────────
+  "tec-certification": {
+    id: "tec-certification",
+    category: "TEC / MTCTE",
+    title: "TEC Certification",
+    subtitle: "Telecommunication Engineering Centre – MTCTE Compliance",
+    shortDescription:
+      "Mandatory certification for telecom and ICT equipment under the Mandatory Testing and Certification of Telecom Equipment (MTCTE) framework.",
+
+    glance: [
+      { label: "Authority", value: "TEC, Department of Telecommunications" },
+      { label: "Timeline", value: "A Few Weeks After Testing", badge: "amber" },
+      { label: "Framework", value: "MTCTE" },
+      { label: "Mandatory?", value: "Yes — Notified Equipment", badge: "green" },
+      { label: "Testing", value: "TEC-designated / NABL Labs", badge: "green" },
+      { label: "Open To", value: "Domestic & Foreign Makers" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "TEC Certification is a mandatory approval issued by the Telecommunication Engineering Centre (TEC), under the Department of Telecommunications (DoT), Government of India. It applies to telecom equipment covered by the Mandatory Testing and Certification of Telecom Equipment (MTCTE) framework and ensures safety, quality and compliance with Indian technical standards.",
+        "Most telecom and ICT equipment covered under MTCTE must obtain TEC certification before sale or import in India. Non-certified telecom products cannot be legally sold, imported or distributed in the Indian market. Both domestic and foreign manufacturers can apply.",
+      ],
+      whyItMatters: [
+        "Mandatory compliance for telecom equipment in India",
+        "Market access for telecom and networking products",
+        "Assurance of safety, quality and performance standards",
+        "Eligibility for government and institutional procurement",
+        "Smooth import and manufacturing clearance",
+      ],
+      industries: [
+        "Mobile Phones & Smart Devices",
+        "Optical Fibre Equipment",
+        "Wi-Fi Routers & Networking Devices",
+        "Base Stations & Transmission Equipment",
+        "Switches, Modems & Gateways",
+        "IoT & Wireless Communication Devices",
+        "Telecom Power Supply Equipment",
+        "EPABX Systems & Communication Hardware",
+      ],
+    },
+
+    certMeta: [
+      { label: "Issuing Body", value: "TEC (DoT)" },
+      { label: "Framework", value: "MTCTE" },
+      { label: "Testing", value: "TEC-designated / NABL Labs", badge: "green" },
+      { label: "Typical Timeline", value: "A Few Weeks After Testing", badge: "amber" },
+      { label: "Applicable To", value: "Domestic & Foreign Manufacturers" },
+      { label: "Coverage", value: "Products Listed under MTCTE" },
+      { label: "Without Certification", value: "Cannot Sell, Import or Distribute" },
+    ],
+
+    stats: [
+      { value: "6", label: "Process Steps" },
+      { value: "8", label: "Product Categories" },
+      { value: "MTCTE", label: "Compliance Framework" },
+      { value: "End-to-End", label: "Support" },
+    ],
+
+    features: [
+      "MTCTE Compliance",
+      "Testing Coordination",
+      "Import & Sale Clearance",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🔎",
+        title: "Product Classification & Requirement Analysis",
+        description:
+          "We check whether your product is covered under the MTCTE notification and identify the requirements that apply.",
+      },
+      {
+        step: 2,
+        icon: "📝",
+        title: "Documentation Preparation",
+        description:
+          "We prepare the technical documents and compliance information needed for your application.",
+      },
+      {
+        step: 3,
+        icon: "🔬",
+        title: "Testing in Designated Labs",
+        description:
+          "Testing in TEC-designated or NABL-accredited laboratories is compulsory. We coordinate this with the labs.",
+      },
+      {
+        step: 4,
+        icon: "💻",
+        title: "Online Application Submission",
+        description:
+          "We file your application online with the required documents and test reports.",
+      },
+      {
+        step: 5,
+        icon: "🧐",
+        title: "Scrutiny & Evaluation by TEC",
+        description:
+          "TEC scrutinises and evaluates your application and test results.",
+      },
+      {
+        step: 6,
+        icon: "✅",
+        title: "Grant of TEC Certificate",
+        description:
+          "The TEC certificate is granted once your product is found compliant.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "⚖️",
+        title: "Mandatory Compliance",
+        description:
+          "Meet the legal requirement for telecom equipment covered under MTCTE.",
+      },
+      {
+        icon: "🌏",
+        title: "Market Access",
+        description:
+          "Sell and import telecom and networking products in India without legal obstacles.",
+      },
+      {
+        icon: "🛡️",
+        title: "Safety & Quality",
+        description:
+          "Assurance of safety, quality and performance as per Indian technical standards.",
+      },
+      {
+        icon: "🏛️",
+        title: "Institutional Procurement",
+        description:
+          "Qualify for government and institutional procurement.",
+      },
+      {
+        icon: "🚚",
+        title: "Smooth Clearance",
+        description:
+          "Supports smooth import and manufacturing clearance.",
+      },
+      {
+        icon: "🔧",
+        title: "Expert Handling",
+        description:
+          "Technical documentation and regulatory requirements are handled by specialists, which minimises delays.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company & Authorisation Documents",
+        items: [
+          "Company Registration and KYC Documents",
+          "Application Details",
+          "Authorised Indian Representative Details (for foreign manufacturers)",
+        ],
+      },
+      {
+        groupLabel: "Technical & Test Documents",
+        items: [
+          "Product Technical Specifications",
+          "Test Reports from TEC-designated / NABL-accredited Labs",
+          "Compliance Documentation",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "Only products listed under the MTCTE notification require mandatory certification. We confirm whether your product is covered and give you a precise checklist.",
+
+    faqs: [
+      {
+        question: "What is MTCTE?",
+        answer:
+          "MTCTE stands for Mandatory Testing and Certification of Telecom Equipment, a framework introduced by the Government of India.",
+      },
+      {
+        question: "Is TEC Certification mandatory for all telecom products?",
+        answer:
+          "Most telecom and ICT equipment covered under MTCTE must obtain TEC certification before sale or import in India. Only products listed in the MTCTE notification require mandatory certification, so not every accessory is covered.",
+      },
+      {
+        question: "Is product testing mandatory?",
+        answer:
+          "Yes. Testing in TEC-designated or NABL-accredited laboratories is compulsory.",
+      },
+      {
+        question: "Can imported products get TEC Certification?",
+        answer:
+          "Yes. Both domestic and foreign manufacturers can apply.",
+      },
+      {
+        question: "What happens if a product is not certified?",
+        answer:
+          "Non-certified telecom products cannot be legally sold, imported or distributed in the Indian market.",
+      },
+    ],
+
+    cta: {
+      title: "Get TEC Certified Without the Delays",
+      description:
+        "We handle technical documentation, testing coordination, application filing and compliance management so that your approval is smooth and successful.",
+      ...CONTACT,
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────
+  // 14. WMI CERTIFICATION (LEGAL METROLOGY)
+  // ───────────────────────────────────────────────────────────
+  "wmi-certification": {
+    id: "wmi-certification",
+    category: "WMI / Legal Metrology",
+    title: "WMI Certification",
+    subtitle: "Weights & Measuring Instruments Approval",
+    shortDescription:
+      "Model approval of weighing and measuring instruments under the Legal Metrology Act, 2009, for manufacturers and importers.",
+
+    glance: [
+      { label: "Authority", value: "Legal Metrology Department" },
+      { label: "Timeline", value: "Varies by Instrument", badge: "amber" },
+      { label: "Governing Law", value: "Legal Metrology Act, 2009" },
+      { label: "Mandatory?", value: "Yes — Before Market Entry", badge: "green" },
+      { label: "Testing", value: "Govt.-approved Labs" },
+      { label: "Applies To", value: "Manufacturers & Importers" },
+    ],
+
+    overview: {
+      paragraphs: [
+        "WMI Certification (Weights & Measuring Instruments Approval) is a mandatory regulatory requirement under the Legal Metrology Act, 2009 for businesses that manufacture, import or sell weighing and measuring instruments in India. Applicable instruments need model approval and certification from the Legal Metrology Department before being introduced into the market.",
+        "The certification confirms that the instrument meets the prescribed standards of accuracy, complies with technical and safety requirements, and is suitable for commercial use in India. It protects consumers and standardises trade and commerce.",
+      ],
+      whyItMatters: [
+        "Mandatory legal compliance for sale in India",
+        "Ensures product accuracy and reliability",
+        "Prevents penalties, product seizure and legal action",
+        "Builds trust with customers and regulatory authorities",
+        "Enables smooth market entry and operations",
+      ],
+      industries: [
+        "Weighing Scales (Electronic / Mechanical)",
+        "Platform Scales",
+        "Weighbridges",
+        "Fuel Dispensers",
+        "Water Meters",
+        "Electricity Meters",
+        "Taxi Meters",
+        "Measuring Tapes & Devices",
+      ],
+    },
+
+    certMeta: [
+      { label: "Applicable Law", value: "Legal Metrology Act, 2009" },
+      { label: "Related Rules", value: "General Rules, 2011 & Approval of Models Rules" },
+      { label: "Authority", value: "Legal Metrology Department" },
+      { label: "Typical Timeline", value: "Varies by Instrument", badge: "amber" },
+      { label: "Approval Type", value: "Model Approval", badge: "green" },
+      { label: "Applies To", value: "Manufacturers & Importers" },
+      { label: "Dealers / Distributors", value: "In Certain Regulated Categories" },
+    ],
+
+    stats: [
+      { value: "6", label: "Process Steps" },
+      { value: "8", label: "Instrument Categories" },
+      { value: "2009", label: "Legal Metrology Act" },
+      { value: "End-to-End", label: "Support" },
+    ],
+
+    features: [
+      "Model Approval",
+      "Legal Metrology Compliance",
+      "Post-Approval Support",
+    ],
+
+    processSteps: [
+      {
+        step: 1,
+        icon: "🔎",
+        title: "Initial Assessment",
+        description:
+          "We evaluate your product category and the regulatory requirements that apply.",
+      },
+      {
+        step: 2,
+        icon: "📝",
+        title: "Documentation & Technical Preparation",
+        description:
+          "We compile specifications, drawings and compliance documents.",
+      },
+      {
+        step: 3,
+        icon: "📤",
+        title: "Application Filing",
+        description:
+          "The model approval application is submitted.",
+      },
+      {
+        step: 4,
+        icon: "🔬",
+        title: "Testing & Evaluation",
+        description:
+          "We coordinate with authorised laboratories for testing and handle queries raised during evaluation.",
+      },
+      {
+        step: 5,
+        icon: "✅",
+        title: "Approval & Certification",
+        description:
+          "The WMI certificate is obtained from the authorities.",
+      },
+      {
+        step: 6,
+        icon: "🔄",
+        title: "Post-Certification Support",
+        description:
+          "We advise on usage, stamping, verification and ongoing compliance, including renewal and modification of approvals.",
+      },
+    ],
+
+    benefits: [
+      {
+        icon: "⚖️",
+        title: "Legal Compliance",
+        description:
+          "Meet the mandatory requirement for selling weighing and measuring instruments in India.",
+      },
+      {
+        icon: "🎯",
+        title: "Accuracy & Reliability",
+        description:
+          "Certification confirms that your instruments meet the prescribed standards of accuracy.",
+      },
+      {
+        icon: "🚫",
+        title: "Avoid Penalties",
+        description:
+          "Prevents penalties, product seizure and legal action.",
+      },
+      {
+        icon: "🤝",
+        title: "Customer & Regulator Trust",
+        description:
+          "Builds trust with customers and regulatory authorities.",
+      },
+      {
+        icon: "🌏",
+        title: "Smooth Market Entry",
+        description:
+          "Enables a smooth start to market entry and operations.",
+      },
+      {
+        icon: "🧰",
+        title: "Wide Instrument Coverage",
+        description:
+          "Applies across scales, weighbridges, fuel dispensers, meters and measuring devices.",
+      },
+    ],
+
+    documents: [
+      {
+        groupLabel: "Company Documents",
+        items: [
+          "Company Registration Certificate",
+          "GST & PAN Details",
+          "Import Export Code (for importers)",
+          "Manufacturing Details / Factory Licence",
+        ],
+      },
+      {
+        groupLabel: "Technical Documents",
+        items: [
+          "Technical Specifications of Instruments",
+          "Product Drawings / Designs",
+          "Test Reports (if available)",
+        ],
+      },
+    ],
+
+    documentsNote:
+      "The exact requirements depend on the type of instrument. We assess your product first and prepare a complete technical dossier.",
+
+    faqs: [
+      {
+        question: "What is WMI Certification?",
+        answer:
+          "It is the approval of models of weighing and measuring instruments by the competent authority before manufacturing, import or sale.",
+      },
+      {
+        question: "Who needs WMI approval?",
+        answer:
+          "Manufacturers and importers of weighing and measuring instruments, and dealers or distributors in certain regulated categories.",
+      },
+      {
+        question: "Which instruments are covered?",
+        answer:
+          "Weighing scales (electronic and mechanical), platform scales, weighbridges, fuel dispensers, water meters, electricity meters, taxi meters, and measuring tapes and devices.",
+      },
+      {
+        question: "Which laws and rules apply?",
+        answer:
+          "The Legal Metrology Act, 2009, the Legal Metrology (General) Rules, 2011, the Legal Metrology (Approval of Models) Rules, and guidelines issued by the Department of Consumer Affairs.",
+      },
+      {
+        question: "Do you help after approval?",
+        answer:
+          "Yes. We guide you on stamping and verification requirements, renewal and modification of approvals, and ongoing compliance.",
+      },
+    ],
+
+    cta: {
+      title: "Get Your WMI Certification",
+      description:
+        "Make sure your weighing and measuring instruments meet all regulatory standards before entering the market. Connect with our Legal Metrology experts today.",
+      ...CONTACT,
     },
   },
 };
