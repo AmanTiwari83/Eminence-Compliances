@@ -150,7 +150,7 @@ export const ServiceContent = {
     description: "The ISI mark is the most recognized certification mark in India, confirming that a product conforms to an Indian Standard (IS) developed by the Bureau of Indian Standards.",
     features: ["Boosts Brand Reputation", "Mandatory for 400+ Products", "Standard Quality Assurance"],
     process: ["Product Testing", "Factory Inspection", "Documentation", "Grant of License"],
-    stats: [{ label: "Validity", value: "1-2 Years" }, { label: "Scope", value: "Industrial/Consumer" }]
+    stats: [{ label: "Validity", value: "1-2 Years" }, { label: "Scope", value: "Industrial/Consumer" }],
   },
   "bis-fmcs-certification": {
     title: "BIS FMCS Certification",

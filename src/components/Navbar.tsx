@@ -41,6 +41,18 @@ interface ServiceGroup {
   items: ServiceItem[];
 }
 
+interface NavDropdownItem {
+  label: string;
+  href: string;
+}
+
+interface NavLink {
+  label: string;
+  href: string;
+  dropdown?: "services" | "links";
+  items?: NavDropdownItem[];
+}
+
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 // const serviceGroups: ServiceGroup[] = [
@@ -173,10 +185,31 @@ const serviceGroups: ServiceGroup[] = [
   },
 ];
 
-const navLinks = [
+const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services", hasDropdown: true },
+  { label: "Services", href: "/services", dropdown: "services" },
+  {
+    label: "Updates",
+    href: "/updates",
+    dropdown: "links",
+    items: [
+      { label: "Blog", href: "/updates/blog" },
+      { label: "Careers", href: "/updates/careers" },
+      { label: "News", href: "/updates/news" },
+    ],
+  },
+  {
+    label: "Portfolio",
+    href: "/portfolio",
+    dropdown: "links",
+    items: [
+      { label: "Case Studies", href: "/portfolio/case-studies" },
+      { label: "Projects", href: "/portfolio/projects" },
+      { label: "Clients", href: "/portfolio/clients" },
+      { label: "Testimonials", href: "/portfolio/testimonials" },
+    ],
+  },
   // { label: "Certification Process", href: "/process" },
   // { label: "Achievements", href: "/achievements" },
   // { label: "Blog", href: "/blog" },
@@ -230,10 +263,23 @@ const accordionVariants = {
 export default function SheenNavbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const desktopServicesRef = useRef<HTMLLIElement>(null);
+  const [mobileMenu, setMobileMenu] = useState({ open: false, pathname });
+  const isMobileOpen = mobileMenu.open && mobileMenu.pathname === pathname;
+  const setIsMobileOpen = (open: boolean) => setMobileMenu({ open, pathname });
+  const [openDropdownState, setOpenDropdownState] = useState<{
+    href: string;
+    pathname: string;
+  } | null>(null);
+  const openDropdown =
+    openDropdownState?.pathname === pathname ? openDropdownState.href : null;
+  const [mobileOpenDropdownState, setMobileOpenDropdownState] = useState<{
+    href: string;
+    pathname: string;
+  } | null>(null);
+  const mobileOpenDropdown =
+    mobileOpenDropdownState?.pathname === pathname
+      ? mobileOpenDropdownState.href
+      : null;
   const hoverTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -242,10 +288,12 @@ export default function SheenNavbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setIsMobileOpen(false);
-    setMobileServicesOpen(false);
-  }, [pathname]);
+  useEffect(
+    () => () => {
+      if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+    },
+    [],
+  );
 
   useEffect(() => {
     document.body.style.overflow = isMobileOpen ? "hidden" : "";
@@ -254,12 +302,12 @@ export default function SheenNavbar() {
     };
   }, [isMobileOpen]);
 
-  const handleServiceMouseEnter = () => {
+  const handleDropdownMouseEnter = (href: string) => {
     if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
-    setServicesOpen(true);
+    setOpenDropdownState({ href, pathname });
   };
-  const handleServiceMouseLeave = () => {
-    hoverTimeout.current = setTimeout(() => setServicesOpen(false), 120);
+  const handleDropdownMouseLeave = () => {
+    hoverTimeout.current = setTimeout(() => setOpenDropdownState(null), 120);
   };
 
   return (
@@ -289,7 +337,7 @@ export default function SheenNavbar() {
         </div>
         <div className="flex items-center gap-5">
           <span className="hidden xl:inline text-[#c9a94e]/80 border-r border-white/10 pr-5 mr-1 font-semibold tracking-wider">
-            India's Trusted Regulatory &amp; BIS Experts
+            India&apos;s Trusted Regulatory &amp; BIS Experts
           </span>
           {socialLinks.map(({ icon: Icon, href }, i) => (
             <Link
@@ -311,7 +359,7 @@ export default function SheenNavbar() {
           : "bg-white border-b border-slate-100"
           }`}
       >
-        <div className=" mx-auto px-4 md:px-16 lg:px-28  w-full  h-[70px] flex items-center justify-between gap-6">
+        <div className="mx-auto w-full h-[70px] flex items-center justify-between gap-6 px-4 md:px-16 lg:px-10 xl:px-28">
 
           {/* ── Logo ── */}
           {/*
@@ -351,22 +399,24 @@ export default function SheenNavbar() {
 
           {/* ── Desktop Nav Links ── */}
           <ul className="hidden lg:flex items-center gap-0.5">
-            {navLinks.map(({ label, href, hasDropdown }) => {
+            {navLinks.map(({ label, href, dropdown, items }) => {
+              const dropdownOpen = openDropdown === href;
               const isActive =
                 pathname === href ||
-                (hasDropdown && pathname.startsWith("/services"));
+                (dropdown === "services" && pathname.startsWith("/services")) ||
+                (dropdown === "links" && pathname.startsWith(`${href}/`));
 
-              if (hasDropdown) {
+              if (dropdown) {
                 return (
                   <li
                     key={label}
-                    ref={desktopServicesRef}
                     className="relative"
-                    onMouseEnter={handleServiceMouseEnter}
-                    onMouseLeave={handleServiceMouseLeave}
+                    onMouseEnter={() => handleDropdownMouseEnter(href)}
+                    onMouseLeave={handleDropdownMouseLeave}
                   >
                     <Link
                       href={href}
+                      aria-expanded={dropdownOpen}
                       className={`flex items-center gap-1 px-3.5 py-2 rounded-lg text-[13px] font-semibold tracking-wide transition-all duration-200 ${isActive
                         ? "text-[#0d1f3c] bg-slate-100"
                         : "text-slate-600 hover:text-[#0d1f3c] hover:bg-slate-50"
@@ -374,22 +424,19 @@ export default function SheenNavbar() {
                     >
                       {label}
                       <MdExpandMore
-                        className={`text-base transition-transform duration-300 ${servicesOpen ? "rotate-180 text-[#c9a94e]" : ""
+                        className={`text-base transition-transform duration-300 ${dropdownOpen ? "rotate-180 text-[#c9a94e]" : ""
                           }`}
                       />
                     </Link>
 
-                    {/* Mega Menu */}
                     <AnimatePresence>
-                      {servicesOpen && (
+                      {dropdownOpen && (dropdown === "services" ? (
                         <motion.div
                           variants={megaMenuVariants}
                           initial="hidden"
                           animate="visible"
                           exit="exit"
                           className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[700px]"
-                          onMouseEnter={handleServiceMouseEnter}
-                          onMouseLeave={handleServiceMouseLeave}
                         >
                           {/* Pointer */}
                           <div className="absolute top-[5px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-slate-100 rotate-45 z-10" />
@@ -468,7 +515,28 @@ export default function SheenNavbar() {
                             </div>
                           </div>
                         </motion.div>
-                      )}
+                      ) : (
+                        <motion.div
+                          variants={megaMenuVariants}
+                          initial="hidden"
+                          animate="visible"
+                          exit="exit"
+                          className="absolute top-full left-0 pt-3 w-56"
+                        >
+                          <ul className="bg-white rounded-xl shadow-[0_20px_60px_rgba(13,31,60,0.15)] border border-slate-100 p-2">
+                            {items?.map((item) => (
+                              <li key={item.href}>
+                                <Link
+                                  href={item.href}
+                                  className="block rounded-lg px-3 py-2.5 text-[13px] font-semibold text-slate-600 transition-colors hover:bg-slate-50 hover:text-[#0d1f3c]"
+                                >
+                                  {item.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </motion.div>
+                      ))}
                     </AnimatePresence>
                   </li>
                 );
@@ -494,7 +562,7 @@ export default function SheenNavbar() {
           <div className="flex items-center gap-3 flex-shrink-0">
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[12.5px] font-bold tracking-wide text-white bg-[#0d1f3c] hover:bg-[#c9a94e] transition-all duration-250 shadow-md hover:shadow-[0_6px_20px_rgba(201,169,78,0.35)] active:scale-95"
+              className="hidden sm:inline-flex lg:hidden xl:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[12.5px] font-bold tracking-wide text-white bg-[#0d1f3c] hover:bg-[#c9a94e] transition-all duration-250 shadow-md hover:shadow-[0_6px_20px_rgba(201,169,78,0.35)] active:scale-95"
             >
               <HiOutlineDocumentCheck size={15} />
               Get Consultation
@@ -591,76 +659,98 @@ export default function SheenNavbar() {
 
               {/* Nav Links */}
               <nav className="flex-1 overflow-y-auto px-3 py-3">
-                {navLinks.map(({ label, href, hasDropdown }) => {
-                  const isActive = pathname === href;
+                {navLinks.map(({ label, href, dropdown, items }) => {
+                    const mobileDropdownOpen = mobileOpenDropdown === href;
+                    const isActive =
+                      pathname === href ||
+                      (dropdown === "services" && pathname.startsWith("/services")) ||
+                      (dropdown === "links" && pathname.startsWith(`${href}/`));
 
-                  if (hasDropdown) {
-                    return (
-                      <div key={label}>
-                        <button
-                          className={`flex items-center justify-between w-full px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-200 ${mobileServicesOpen
-                            ? "bg-slate-50 text-[#0d1f3c]"
-                            : "text-slate-700 hover:bg-slate-50"
-                            }`}
-                          onClick={() =>
-                            setMobileServicesOpen(!mobileServicesOpen)
-                          }
-                        >
-                          <span>{label}</span>
-                          <MdExpandMore
-                            className={`text-lg text-slate-400 transition-transform duration-300 ${mobileServicesOpen ? "rotate-180" : ""
+                    if (dropdown) {
+                      return (
+                        <div key={label}>
+                          <button
+                            className={`flex items-center justify-between w-full px-4 py-3.5 rounded-xl text-sm font-semibold transition-all duration-200 ${mobileDropdownOpen || isActive
+                              ? "bg-slate-50 text-[#0d1f3c]"
+                              : "text-slate-700 hover:bg-slate-50"
                               }`}
-                          />
-                        </button>
+                            aria-expanded={mobileDropdownOpen}
+                            onClick={() =>
+                              setMobileOpenDropdownState(
+                                mobileDropdownOpen ? null : { href, pathname },
+                              )
+                            }
+                          >
+                            <span>{label}</span>
+                            <MdExpandMore
+                              className={`text-lg text-slate-400 transition-transform duration-300 ${mobileDropdownOpen ? "rotate-180" : ""
+                                }`}
+                            />
+                          </button>
 
-                        <AnimatePresence>
-                          {mobileServicesOpen && (
-                            <motion.div
-                              variants={accordionVariants}
-                              initial="hidden"
-                              animate="visible"
-                              exit="exit"
-                              className="overflow-hidden"
-                            >
-                              <div className="px-2 pb-2 space-y-3 pt-1">
-                                {serviceGroups.map((group) => (
-                                  <div key={group.category}>
-                                    <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400 px-3 mb-1.5">
-                                      {group.category}
-                                    </p>
-                                    {group.items.map((item) => {
-                                      const Icon = item.icon;
-                                      return (
-                                        <Link
-                                          key={item.label}
-                                          href={item.href}
-                                          onClick={() => setIsMobileOpen(false)}
-                                          className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-slate-50 active:bg-slate-100 transition-all"
-                                        >
-                                          <span className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0">
-                                            <Icon className="text-slate-500 text-sm" />
-                                          </span>
-                                          <span className="text-[12.5px] text-slate-600 font-semibold flex-1 leading-snug">
-                                            {item.label}
-                                          </span>
-                                          {item.tag && (
-                                            <span
-                                              className={`text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full ${item.tag === "New"
-                                                ? "bg-emerald-50 text-emerald-600"
-                                                : "bg-amber-50 text-amber-600"
-                                                }`}
+                          <AnimatePresence>
+                            {mobileDropdownOpen && (
+                              <motion.div
+                                variants={accordionVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                                className="overflow-hidden"
+                              >
+                                {dropdown === "services" ? (
+                                  <div className="px-2 pb-2 space-y-3 pt-1">
+                                    {serviceGroups.map((group) => (
+                                      <div key={group.category}>
+                                        <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400 px-3 mb-1.5">
+                                          {group.category}
+                                        </p>
+                                        {group.items.map((item) => {
+                                          const Icon = item.icon;
+                                          return (
+                                            <Link
+                                              key={item.label}
+                                              href={item.href}
+                                              onClick={() => setIsMobileOpen(false)}
+                                              className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-slate-50 active:bg-slate-100 transition-all"
                                             >
-                                              {item.tag}
-                                            </span>
-                                          )}
-                                        </Link>
-                                      );
-                                    })}
+                                              <span className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0">
+                                                <Icon className="text-slate-500 text-sm" />
+                                              </span>
+                                              <span className="text-[12.5px] text-slate-600 font-semibold flex-1 leading-snug">
+                                                {item.label}
+                                              </span>
+                                              {item.tag && (
+                                                <span
+                                                  className={`text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full ${item.tag === "New"
+                                                    ? "bg-emerald-50 text-emerald-600"
+                                                    : "bg-amber-50 text-amber-600"
+                                                    }`}
+                                                >
+                                                  {item.tag}
+                                                </span>
+                                              )}
+                                            </Link>
+                                          );
+                                        })}
+                                      </div>
+                                    ))}
                                   </div>
-                                ))}
-                              </div>
-                            </motion.div>
-                          )}
+                                ) : (
+                                  <div className="px-2 pb-2 pt-1">
+                                    {items?.map((item) => (
+                                      <Link
+                                        key={item.href}
+                                        href={item.href}
+                                        onClick={() => setIsMobileOpen(false)}
+                                        className="block rounded-lg px-3 py-2.5 text-[12.5px] font-semibold text-slate-600 transition-colors hover:bg-slate-50 active:bg-slate-100"
+                                      >
+                                        {item.label}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </motion.div>
+                            )}
                         </AnimatePresence>
                       </div>
                     );

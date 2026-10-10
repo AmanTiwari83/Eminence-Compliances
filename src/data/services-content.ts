@@ -219,6 +219,11 @@ export const ServiceContent = {
       phone: "+91 74285 55852",
       whatsapp: "917428555852",
     },
+    certificateImage: {
+      src: "bis-isi.png",
+      alt: "BIS licence granted for Safety Glass as per IS 2553 : Part 1 : 2018",
+      caption: "Sample BIS Product Certification Licence",
+    },
   },
 
   "bis-fmcs-certification": {
@@ -440,6 +445,11 @@ export const ServiceContent = {
       email: "info@eminencecompliance.com",
       phone: "+91 74285 55852",
       whatsapp: "917428555852",
+    },
+    certificateImage: {
+      src: "bis-fmcs.png",
+      alt: "BIS Certification Marks Licence granted as per IS 302 (Part 2/Sec 75) : 2018",
+      caption: "Sample BIS Certification Marks Licence under FMCS (IS 302)",
     },
   },
 
@@ -875,7 +885,11 @@ export const ServiceContent = {
     subtitle: "Safety for Electronics & IT Goods",
     shortDescription:
       "Registration for electronics products under the Compulsory Registration Order to prevent substandard goods from entering the market.",
-
+    certificateImage: {
+      src: "bis-crs.png",
+      alt: "BIS CRS registration licence document for LED Lighting Chains as per IS 10322 (Part 5/Sec 7) : 2017",
+      caption: "Sample BIS CRS Licence Document (LED Lighting Chains)",
+    },
     glance: [
       { label: "Authority", value: "Bureau of Indian Standards" },
       { label: "Timeline", value: "20–30 Days", badge: "amber" },
