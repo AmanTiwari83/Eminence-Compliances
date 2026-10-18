@@ -634,7 +634,7 @@ const ServiceCard = ({
 
               {/* Description */}
               <motion.p
-                className="mb-4 flex-1 text-[0.79rem] text-gray leading-relaxed font-semibold"
+                className="mb-4 flex-1 text-[0.85rem] text-gray leading-relaxed font-semibold"
                 animate={{
                   color: isHovered
                     ? "rgba(32,56,92,0.74)"
