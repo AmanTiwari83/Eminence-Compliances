@@ -391,8 +391,8 @@ const heroImages = [
 ];
 
 const stats = [
-  { num: "1200+", label: "Projects Delivered" },
-  { num: "98%", label: "Approval Success Rate" },
+  { num: "10,000+", label: "Projects Delivered" },
+  { num: "100%", label: "Approval Success Rate" },
   { num: "10+", label: "Years Experience" },
 ];
 
