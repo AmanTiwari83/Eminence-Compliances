@@ -30,6 +30,7 @@ import {
   TbFileCertificate,
   TbFlask,
   TbRuler2,
+  TbClipboardCheck,
   TbMedicalCross,
   TbAntennaBars5,
   TbCpu,
@@ -141,15 +142,15 @@ const serviceGroups: ServiceGroup[] = [
         tag: "Popular",
       },
       {
-        label: "ISI Mark Certification",
+        label: "BIS ISI Certification for Domestic Manufacturer",
         icon: TbShieldStar,
-        href: "/services/bis-isi-certification",
+        href: "/services/bis-isi-certification-domestic",
       },
-      // {
-      //   label: "ISI Mark – Domestic Manufacturer",
-      //   icon: TbBuildingFactory2,
-      //   href: "/services/bis-isi-domestic-manufacturer",
-      // },
+      {
+        label: "BIS Management Systems Certification",
+        icon: TbClipboardCheck,
+        href: "/services/bis-management-systems-certification",
+      },
       {
         label: "BIS CRS Registration",
         icon: TbCertificate,

@@ -6766,12 +6766,16 @@ export const ServiceContent = {
         "label": "Certification Consultancy Support"
       },
       {
-        "value": "Scheme-Specific",
-        "label": "Scheme III"
+        "value": "Scheme III",
+        "label": "Scheme-Specific Certification"
       },
       {
         "value": "Audit-Ready",
         "label": "Preparation Assistance"
+      },
+      {
+        "value": "Pan India",
+        "label": "Coverage"
       }
     ],
     "features": [
@@ -6888,9 +6892,9 @@ export const ServiceContent = {
           "Management System Policy and Objectives",
           "Relevant Procedures, Process Documents and Work Instructions",
           "Process Maps and Operational Controls",
-          "Risk and Opportunity Assessment Records,",
+          "Risk and Opportunity Assessment Records",
           "Monitoring, Measurement and Performance Records",
-          "Internal Audit Records ",
+          "Internal Audit Records",
           "Management Review Records",
           "Corrective Action and Nonconformity Records"
         ]
@@ -6944,7 +6948,7 @@ export const ServiceContent = {
       },
       {
         "question": "How long does BIS Management Systems Certification take?",
-        "answer": "It takes around 3 to 4 months depends on the scheme, application completeness, audit scheduling, organization size and complexity, and closure of any nonconformities. The applicable BIS procedure should be checked for the current process."
+        "answer": "It typically takes around 3 to 4 months, depending on the scheme, application completeness, audit scheduling, organization size and complexity, and closure of any nonconformities. The applicable BIS procedure should be checked for the current process."
       },
       {
         "question": "What are the fees for BIS Management Systems Certification?",
@@ -7678,6 +7682,8 @@ export const ServiceContent = {
       "whatsapp": "917428555852"
     }
   },
+
+
   "epr-authorization": {
     "id": "epr-authorization",
     "category": "EPR / Environmental Compliance",
@@ -7721,6 +7727,27 @@ export const ServiceContent = {
         "E-WASTE EPR REGISTRATION: E-Waste EPR applies to eligible producers and electrical and electronic equipment categories covered under the E-Waste (Management) Rules, 2022, as amended. Businesses introducing covered electrical and electronic products into the Indian market should assess their registration and recycling obligations. Our E-Waste EPR consultancy supports product applicability assessment, document preparation, registration application assistance, and guidance on applicable recycling targets, certificates, returns, and ongoing compliance requirements.",
         "USED OIL EPR REGISTRATION: Used Oil EPR requirements are prescribed under the applicable provisions of the Hazardous and Other Wastes (Management and Transboundary Movement) Rules, as amended. Depending on the relevant provisions, obligations may apply to specified producers of base oil or lubricating oil and eligible used-oil importers. We help businesses assess applicability, understand registration requirements, organise supporting documentation, and navigate the relevant EPR compliance procedure.",
         "WASTE TYRE EPR REGISTRATION: Waste Tyre EPR requirements apply to eligible producers and other entities covered under the applicable Hazardous and Other Wastes (Management and Transboundary Movement) Rules, as amended. Businesses manufacturing or importing covered tyres should assess their registration and recycling obligations. Our Waste Tyre EPR consultancy includes regulatory applicability assessment, documentation guidance, registration assistance, and information on applicable recycling or retreading certificates and compliance responsibilities."
+      ],
+      "whyItMatters": [
+        "EPR registration and compliance obligations may apply to eligible producers, importers, manufacturers and brand owners under the applicable waste management rules",
+        "Helps identify which EPR categories apply to your products, packaging and business activities",
+        "Supports readiness for applicable targets, certificates, returns and recordkeeping requirements",
+        "Reduces the risk of non-compliance with applicable environmental regulations",
+        "Shows customers and business partners your commitment to environmentally sound waste management"
+      ],
+      "industries": [
+        "Battery Waste EPR",
+        "Plastic Waste & Plastic Packaging EPR",
+        "E-Waste EPR",
+        "Used Oil EPR",
+        "Waste Tyre EPR",
+        "Manufacturers & Producers",
+        "Importers & Brand Owners",
+        "Electrical & Electronic Equipment Businesses",
+        "Plastic Packaging Businesses",
+        "Battery Manufacturers & Importers",
+        "Tyre Manufacturers & Importers",
+        "Eligible Base Oil, Lubricating Oil & Used Oil Businesses"
       ]
     },
     "industries": [
@@ -7769,6 +7796,24 @@ export const ServiceContent = {
       {
         "label": "Validity & Renewal",
         "value": "As Prescribed Under the Applicable Rules"
+      }
+    ],
+    "stats": [
+      {
+        "value": "500+",
+        "label": "EPR Registrations"
+      },
+      {
+        "value": "100%",
+        "label": "Success Rate"
+      },
+      {
+        "value": "10+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "Pan India",
+        "label": "Coverage"
       }
     ],
     "features": [
@@ -7853,6 +7898,32 @@ export const ServiceContent = {
         "description": "Get regulatory guidance when manufacturing, importing, or marketing covered products in India, subject to the applicable category-specific rules."
       }
     ],
+    "documents": [
+      {
+        "groupLabel": "Company & Identity Documents",
+        "items": [
+          "Certificate of Incorporation / Partnership Deed / Proprietorship Proof",
+          "GST Registration Certificate",
+          "PAN Card of the Entity",
+          "Identity Proof & Authorisation Letter of Authorised Signatory",
+          "Registered Office / Business Address Proof",
+          "Import Export Code (IEC) Certificate, for importers",
+          "Digital Signature Certificate (DSC), where applicable"
+        ]
+      },
+      {
+        "groupLabel": "Product, Packaging & Manufacturing Documents",
+        "items": [
+          "Product, Battery, Packaging, Equipment or Tyre Details, as applicable",
+          "Brand Owner Details & Brand Authorisation, where applicable",
+          "Manufacturing, Import & Sales Records",
+          "Factory Licence & Pollution Control Board Consents, where applicable",
+          "Declarations, Undertakings & Affidavits, as prescribed",
+          "Agreements with Recyclers or Processors, where applicable"
+        ]
+      }
+    ],
+    "documentsNote": "Requirements vary by EPR category and applicant type. We prepare a category-specific document checklist before filing, so you submit only what is relevant to your products and activities.",
     "faqs": [
       {
         "question": "What is EPR Certification and Registration in India?",
@@ -7903,6 +7974,9 @@ export const ServiceContent = {
       "whatsapp": "917428555852"
     }
   },
+
+
+
   "legal-metrology-registration": {
     "id": "legal-metrology-registration",
     "category": "Legal Metrology",

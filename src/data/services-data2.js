@@ -228,9 +228,18 @@ const IconDefault = () => (
   </svg>
 );
 
+// Management Systems – clipboard with check
+const IconManagementSystems = () => (
+  <svg {...svgProps}>
+    <rect x="5" y="4" width="14" height="17" rx="2" />
+    <path d="M9 4h6v3H9z" />
+    <path d="M9 13l2 2 4-4" />
+  </svg>
+);
+
 // ---------- Lookup by service id ----------
 const serviceIcons = {
-  "bis-isi-certification": IconISI,
+  "bis-isi-certification-domestic": IconISI,
   "bis-fmcs-certification": IconFMCS,
   "bis-hallmark-certification": IconHallmark,
   "bis-assaying-centre": IconAssaying,
@@ -254,6 +263,7 @@ const serviceIcons = {
   "stqc-certification": IconSTQC,
   "tec-certification": IconTEC,
   "wmi-certification": IconWMICert,
+  "bis-management-systems-certification": IconManagementSystems,
 };
 
 const getIconForService = (id) => serviceIcons[id] || IconDefault;
@@ -261,12 +271,12 @@ const getIconForService = (id) => serviceIcons[id] || IconDefault;
 // ---------- Data ----------
 export const servicesData = [
   {
-    id: "bis-isi-certification",
-    title: "BIS ISI Certification",
+    id: "bis-isi-certification-domestic",
+    title: "BIS ISI Certification for Domestic Manufacturer",
     description: "Certification for industrial products to ensure quality, safety, and reliability with the ISI mark.",
     category: "BIS Services",
     abbr: "ISI",
-    icon: getIconForService("bis-isi-certification"),
+    icon: getIconForService("bis-isi-certification-domestic"),
     logo: "/images/service-desc/bis.png",
   },
   {
@@ -302,6 +312,14 @@ export const servicesData = [
     abbr: "CRS",
     logo: "/images/service-desc/crs.png",
     icon: getIconForService("bis-crs-registration"),
+  },
+  {
+    id: "bis-management-systems-certification",
+    title: "BIS Management Systems Certification",
+    description: "Certification support for QMS, EMS, FSMS and other management systems under applicable BIS schemes.",
+    category: "BIS",
+    abbr: "MSCS",
+    icon: getIconForService("bis-management-systems-certification"),
   },
   {
     id: "bis-eco-mark",

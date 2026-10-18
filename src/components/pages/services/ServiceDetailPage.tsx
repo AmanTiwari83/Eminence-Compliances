@@ -279,7 +279,7 @@ function Hero({ service }: { service: ServiceDetail }) {
 // TRUST BAR
 // ─────────────────────────────────────────────────────────────
 function TrustBar({ service }: { service: ServiceDetail }) {
-  const items = service.stats.map((s) => ({ icon: "✅", text: `${s.value} ${s.label}` }));
+  const items = service.stats?.map((s) => ({ icon: "✅", text: `${s.value} ${s.label}` }));
   return (
     <div className="bg-[#f8f9fb] border-b border-gray-100 py-4">
       <div className="max-w-6xl mx-auto px-5 flex items-center justify-center flex-wrap gap-x-8 gap-y-3">
