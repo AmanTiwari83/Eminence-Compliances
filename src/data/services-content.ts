@@ -2429,211 +2429,211 @@ export const ServiceContent = {
   // ───────────────────────────────────────────────────────────
   // 1. BIS ISI MARK — DOMESTIC MANUFACTURER
   // ───────────────────────────────────────────────────────────
-  "bis-isi-domestic-manufacturer": {
-    id: "bis-isi-domestic-manufacturer",
-    category: "BIS / ISI Mark",
-    title: "BIS Certification for Domestic Manufacturers",
-    subtitle: "ISI Mark Licence for Indian Factories",
-    shortDescription:
-      "A BIS licence to use the ISI Mark, giving third-party assurance of the quality, safety and reliability of products made in India.",
+  // "bis-isi-domestic-manufacturer": {
+  //   id: "bis-isi-domestic-manufacturer",
+  //   category: "BIS / ISI Mark",
+  //   title: "BIS Certification for Domestic Manufacturers",
+  //   subtitle: "ISI Mark Licence for Indian Factories",
+  //   shortDescription:
+  //     "A BIS licence to use the ISI Mark, giving third-party assurance of the quality, safety and reliability of products made in India.",
 
-    glance: [
-      { label: "Authority", value: "Bureau of Indian Standards" },
-      { label: "Normal Procedure", value: "60–65 Working Days", badge: "amber" },
-      { label: "Simplified Procedure", value: "35–40 Working Days", badge: "amber" },
-      { label: "Mandatory?", value: "Yes — Notified Products", badge: "green" },
-      { label: "Licence Holder", value: "Manufacturing Factory Units" },
-      { label: "Factory Inspection", value: "Required", badge: "green" },
-    ],
+  //   glance: [
+  //     { label: "Authority", value: "Bureau of Indian Standards" },
+  //     { label: "Normal Procedure", value: "60–65 Working Days", badge: "amber" },
+  //     { label: "Simplified Procedure", value: "35–40 Working Days", badge: "amber" },
+  //     { label: "Mandatory?", value: "Yes — Notified Products", badge: "green" },
+  //     { label: "Licence Holder", value: "Manufacturing Factory Units" },
+  //     { label: "Factory Inspection", value: "Required", badge: "green" },
+  //   ],
 
-    overview: {
-      paragraphs: [
-        "The Bureau of Indian Standards (BIS) is India's national standards body, established under the Bureau of Indian Standards Act, 2016 and functioning under the Ministry of Consumer Affairs, Food and Public Distribution. Through its Product Certification Scheme, BIS grants licences to manufacturers whose products conform to the relevant Indian Standards (IS). The mark that a licensee is allowed to use is the ISI Mark.",
-        "BIS certification is mandatory for products notified under the compulsory certification scheme, and such products cannot be sold in India without it. The process involves product testing, factory inspection and ongoing surveillance. The ISI Mark shows the Indian Standard number at the top and the unique licence number (CM/L-XXXXXXXXXX) at the bottom.",
-      ],
-      whyItMatters: [
-        "Mandatory for products under BIS's compulsory certification scheme",
-        "Third-party assurance of quality, safety and reliability",
-        "Confirms conformity to the relevant Indian Standards",
-        "Builds customer trust and a strong brand image",
-        "Backed by ongoing surveillance to maintain compliance",
-      ],
-      industries: [
-        "Manufacturing Units",
-        "Products under Compulsory Certification",
-        "Products under Voluntary Certification",
-        "Multi-Factory Manufacturers",
-      ],
-    },
+  //   overview: {
+  //     paragraphs: [
+  //       "The Bureau of Indian Standards (BIS) is India's national standards body, established under the Bureau of Indian Standards Act, 2016 and functioning under the Ministry of Consumer Affairs, Food and Public Distribution. Through its Product Certification Scheme, BIS grants licences to manufacturers whose products conform to the relevant Indian Standards (IS). The mark that a licensee is allowed to use is the ISI Mark.",
+  //       "BIS certification is mandatory for products notified under the compulsory certification scheme, and such products cannot be sold in India without it. The process involves product testing, factory inspection and ongoing surveillance. The ISI Mark shows the Indian Standard number at the top and the unique licence number (CM/L-XXXXXXXXXX) at the bottom.",
+  //     ],
+  //     whyItMatters: [
+  //       "Mandatory for products under BIS's compulsory certification scheme",
+  //       "Third-party assurance of quality, safety and reliability",
+  //       "Confirms conformity to the relevant Indian Standards",
+  //       "Builds customer trust and a strong brand image",
+  //       "Backed by ongoing surveillance to maintain compliance",
+  //     ],
+  //     industries: [
+  //       "Manufacturing Units",
+  //       "Products under Compulsory Certification",
+  //       "Products under Voluntary Certification",
+  //       "Multi-Factory Manufacturers",
+  //     ],
+  //   },
 
-    certMeta: [
-      { label: "Applicable Law", value: "BIS Act, 2016" },
-      { label: "Issuing Body", value: "Bureau of Indian Standards" },
-      { label: "Certification Mark", value: "ISI Mark" },
-      { label: "Licence Format", value: "CM/L-XXXXXXXXXX" },
-      { label: "Normal Procedure", value: "60–65 Working Days", badge: "amber" },
-      { label: "Simplified Procedure", value: "35–40 Working Days", badge: "amber" },
-      { label: "Factory Inspection", value: "Required", badge: "green" },
-      { label: "Licence Granted To", value: "Factory Units Only" },
-    ],
+  //   certMeta: [
+  //     { label: "Applicable Law", value: "BIS Act, 2016" },
+  //     { label: "Issuing Body", value: "Bureau of Indian Standards" },
+  //     { label: "Certification Mark", value: "ISI Mark" },
+  //     { label: "Licence Format", value: "CM/L-XXXXXXXXXX" },
+  //     { label: "Normal Procedure", value: "60–65 Working Days", badge: "amber" },
+  //     { label: "Simplified Procedure", value: "35–40 Working Days", badge: "amber" },
+  //     { label: "Factory Inspection", value: "Required", badge: "green" },
+  //     { label: "Licence Granted To", value: "Factory Units Only" },
+  //   ],
 
-    stats: [
-      { value: "60–65", label: "Working Days (Normal)" },
-      { value: "35–40", label: "Working Days (Simplified)" },
-      { value: "2", label: "Procedures Available" },
-      { value: "Factory", label: "Based Licensing" },
-    ],
+  //   stats: [
+  //     { value: "60–65", label: "Working Days (Normal)" },
+  //     { value: "35–40", label: "Working Days (Simplified)" },
+  //     { value: "2", label: "Procedures Available" },
+  //     { value: "Factory", label: "Based Licensing" },
+  //   ],
 
-    features: [
-      "Third-party Assurance",
-      "Factory Inspection & Testing",
-      "Ongoing Surveillance",
-    ],
+  //   features: [
+  //     "Third-party Assurance",
+  //     "Factory Inspection & Testing",
+  //     "Ongoing Surveillance",
+  //   ],
 
-    processSteps: [
-      {
-        step: 1,
-        icon: "🏗️",
-        title: "Pre-Application Preparation",
-        description:
-          "The manufacturing unit sets up its in-house testing laboratory, aligns its products with the relevant Indian Standards and compiles the required documentation.",
-      },
-      {
-        step: 2,
-        icon: "📄",
-        title: "Application Submission & Scrutiny",
-        description:
-          "The application is submitted to BIS, followed by a preliminary document review and a preliminary factory inspection by BIS officials.",
-      },
-      {
-        step: 3,
-        icon: "🏭",
-        title: "Factory Inspection",
-        description:
-          "BIS conducts a comprehensive audit of the manufacturing facility, processes and quality systems.",
-      },
-      {
-        step: 4,
-        icon: "🔬",
-        title: "Independent Testing",
-        description:
-          "Sealed product samples are sent to BIS-recognised laboratories and tested against all specified IS parameters. Under the Simplified Procedure, samples are pre-tested before application and undergo confirmatory testing afterwards.",
-      },
-      {
-        step: 5,
-        icon: "✅",
-        title: "Grant of Licence",
-        description:
-          "On successful test results and compliance verification, BIS grants the licence authorising use of the ISI Mark.",
-      },
-      {
-        step: 6,
-        icon: "🔄",
-        title: "Surveillance & Ongoing Compliance",
-        description:
-          "After the grant, regular surveillance continues to confirm that your products keep meeting the Indian Standard. We support you in staying compliant.",
-      },
-    ],
+  //   processSteps: [
+  //     {
+  //       step: 1,
+  //       icon: "🏗️",
+  //       title: "Pre-Application Preparation",
+  //       description:
+  //         "The manufacturing unit sets up its in-house testing laboratory, aligns its products with the relevant Indian Standards and compiles the required documentation.",
+  //     },
+  //     {
+  //       step: 2,
+  //       icon: "📄",
+  //       title: "Application Submission & Scrutiny",
+  //       description:
+  //         "The application is submitted to BIS, followed by a preliminary document review and a preliminary factory inspection by BIS officials.",
+  //     },
+  //     {
+  //       step: 3,
+  //       icon: "🏭",
+  //       title: "Factory Inspection",
+  //       description:
+  //         "BIS conducts a comprehensive audit of the manufacturing facility, processes and quality systems.",
+  //     },
+  //     {
+  //       step: 4,
+  //       icon: "🔬",
+  //       title: "Independent Testing",
+  //       description:
+  //         "Sealed product samples are sent to BIS-recognised laboratories and tested against all specified IS parameters. Under the Simplified Procedure, samples are pre-tested before application and undergo confirmatory testing afterwards.",
+  //     },
+  //     {
+  //       step: 5,
+  //       icon: "✅",
+  //       title: "Grant of Licence",
+  //       description:
+  //         "On successful test results and compliance verification, BIS grants the licence authorising use of the ISI Mark.",
+  //     },
+  //     {
+  //       step: 6,
+  //       icon: "🔄",
+  //       title: "Surveillance & Ongoing Compliance",
+  //       description:
+  //         "After the grant, regular surveillance continues to confirm that your products keep meeting the Indian Standard. We support you in staying compliant.",
+  //     },
+  //   ],
 
-    benefits: [
-      {
-        icon: "🌏",
-        title: "Legal Market Access",
-        description:
-          "Products under compulsory certification cannot be sold in India without a valid BIS licence.",
-      },
-      {
-        icon: "🛡️",
-        title: "Third-Party Assurance",
-        description:
-          "Independent testing and factory inspection give customers confidence in your product's quality and safety.",
-      },
-      {
-        icon: "⭐",
-        title: "Brand Credibility",
-        description:
-          "BIS has become synonymous with authenticity and quality in India, and the ISI Mark strengthens your brand image.",
-      },
-      {
-        icon: "⚡",
-        title: "Faster Route Available",
-        description:
-          "The Simplified Procedure uses pre-tested samples and can deliver certification in 35–40 working days.",
-      },
-      {
-        icon: "📋",
-        title: "Standards Compliance",
-        description:
-          "Certification confirms that your product conforms to the specific Indian Standard that applies to it.",
-      },
-      {
-        icon: "🔬",
-        title: "Stronger Quality Systems",
-        description:
-          "An equipped in-house laboratory and defined inspection and testing procedures help you maintain consistent quality.",
-      },
-    ],
+  //   benefits: [
+  //     {
+  //       icon: "🌏",
+  //       title: "Legal Market Access",
+  //       description:
+  //         "Products under compulsory certification cannot be sold in India without a valid BIS licence.",
+  //     },
+  //     {
+  //       icon: "🛡️",
+  //       title: "Third-Party Assurance",
+  //       description:
+  //         "Independent testing and factory inspection give customers confidence in your product's quality and safety.",
+  //     },
+  //     {
+  //       icon: "⭐",
+  //       title: "Brand Credibility",
+  //       description:
+  //         "BIS has become synonymous with authenticity and quality in India, and the ISI Mark strengthens your brand image.",
+  //     },
+  //     {
+  //       icon: "⚡",
+  //       title: "Faster Route Available",
+  //       description:
+  //         "The Simplified Procedure uses pre-tested samples and can deliver certification in 35–40 working days.",
+  //     },
+  //     {
+  //       icon: "📋",
+  //       title: "Standards Compliance",
+  //       description:
+  //         "Certification confirms that your product conforms to the specific Indian Standard that applies to it.",
+  //     },
+  //     {
+  //       icon: "🔬",
+  //       title: "Stronger Quality Systems",
+  //       description:
+  //         "An equipped in-house laboratory and defined inspection and testing procedures help you maintain consistent quality.",
+  //     },
+  //   ],
 
-    documents: [
-      {
-        groupLabel: "Company & Factory Documents",
-        items: [
-          "Completed BIS Application Form",
-          "Factory Registration and Other KYC Documents",
-          "Authorised Signatory Details and QCI/NABCB Accreditation Documents",
-          "Factory Layout",
-          "Additional Documents (as required)",
-        ],
-      },
-      {
-        groupLabel: "Technical & Testing Documents",
-        items: [
-          "Detailed Manufacturing Process Flow Chart",
-          "Raw Material Specifications with Supplier Test Certificates",
-          "List of Manufacturing and Testing Equipment with Calibration Certificates",
-          "Factory Test Reports",
-        ],
-      },
-    ],
+  //   documents: [
+  //     {
+  //       groupLabel: "Company & Factory Documents",
+  //       items: [
+  //         "Completed BIS Application Form",
+  //         "Factory Registration and Other KYC Documents",
+  //         "Authorised Signatory Details and QCI/NABCB Accreditation Documents",
+  //         "Factory Layout",
+  //         "Additional Documents (as required)",
+  //       ],
+  //     },
+  //     {
+  //       groupLabel: "Technical & Testing Documents",
+  //       items: [
+  //         "Detailed Manufacturing Process Flow Chart",
+  //         "Raw Material Specifications with Supplier Test Certificates",
+  //         "List of Manufacturing and Testing Equipment with Calibration Certificates",
+  //         "Factory Test Reports",
+  //       ],
+  //     },
+  //   ],
 
-    documentsNote:
-      "Requirements differ by product and Indian Standard. BIS publishes product manuals covering sampling, test equipment and the Scheme of Inspection and Testing (SIT). Our team prepares a product-specific checklist so that your application is complete and less likely to be rejected.",
+  //   documentsNote:
+  //     "Requirements differ by product and Indian Standard. BIS publishes product manuals covering sampling, test equipment and the Scheme of Inspection and Testing (SIT). Our team prepares a product-specific checklist so that your application is complete and less likely to be rejected.",
 
-    faqs: [
-      {
-        question: "What are the BIS fees for a domestic manufacturer?",
-        answer:
-          "The application fee is ₹1,000, audit charges are ₹7,000 (sample testing may vary) and the licence fee is ₹1,000. The sample testing fee depends on the product and laboratory, and the marking fee is paid in advance as per the applicable IS Standard.",
-      },
-      {
-        question: "Who can apply for an ISI Mark licence?",
-        answer:
-          "BIS licences are issued only to manufacturing factory units, not to distributors or retailers.",
-      },
-      {
-        question: "What if I manufacture at more than one factory?",
-        answer:
-          "A separate application is required for each product-factory combination when you operate multiple factories at different locations.",
-      },
-      {
-        question: "Can I outsource part of the manufacturing?",
-        answer:
-          "All manufacturing, from raw material receipt to final packaging, must take place within the licensed factory. Any outsourcing needs prior BIS approval.",
-      },
-      {
-        question: "Which procedure is faster, Normal or Simplified?",
-        answer:
-          "The Simplified Procedure takes about 35–40 working days, compared with 60–65 working days under the Normal Procedure. It relies on test reports from samples that were tested at a BIS-recognised laboratory before application.",
-      },
-    ],
+  //   faqs: [
+  //     {
+  //       question: "What are the BIS fees for a domestic manufacturer?",
+  //       answer:
+  //         "The application fee is ₹1,000, audit charges are ₹7,000 (sample testing may vary) and the licence fee is ₹1,000. The sample testing fee depends on the product and laboratory, and the marking fee is paid in advance as per the applicable IS Standard.",
+  //     },
+  //     {
+  //       question: "Who can apply for an ISI Mark licence?",
+  //       answer:
+  //         "BIS licences are issued only to manufacturing factory units, not to distributors or retailers.",
+  //     },
+  //     {
+  //       question: "What if I manufacture at more than one factory?",
+  //       answer:
+  //         "A separate application is required for each product-factory combination when you operate multiple factories at different locations.",
+  //     },
+  //     {
+  //       question: "Can I outsource part of the manufacturing?",
+  //       answer:
+  //         "All manufacturing, from raw material receipt to final packaging, must take place within the licensed factory. Any outsourcing needs prior BIS approval.",
+  //     },
+  //     {
+  //       question: "Which procedure is faster, Normal or Simplified?",
+  //       answer:
+  //         "The Simplified Procedure takes about 35–40 working days, compared with 60–65 working days under the Normal Procedure. It relies on test reports from samples that were tested at a BIS-recognised laboratory before application.",
+  //     },
+  //   ],
 
-    cta: {
-      title: "Get Your ISI Mark Licence",
-      description:
-        "Speak with our BIS specialists. We guide you through documentation, factory readiness, testing and the BIS application from start to finish.",
-      ...CONTACT,
-    },
-  },
+  //   cta: {
+  //     title: "Get Your ISI Mark Licence",
+  //     description:
+  //       "Speak with our BIS specialists. We guide you through documentation, factory readiness, testing and the BIS application from start to finish.",
+  //     ...CONTACT,
+  //   },
+  // },
 
   // ───────────────────────────────────────────────────────────
   // 2. BIS LABORATORY RECOGNITION SCHEME (LRS)

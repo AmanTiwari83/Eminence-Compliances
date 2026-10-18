@@ -16,10 +16,10 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title:
-    "Eminence Global Compliances | BIS Certification & Regulatory Services",
+    "Eminence Global Compliances Group | BIS Certification & Regulatory Services",
 
   description:
-    "Eminence Global Compliances provides expert BIS certification, ISI mark registration, and regulatory compliance services in India. End-to-end support for manufacturers and businesses.",
+    "Eminence Global Compliances Group provides expert BIS certification, ISI mark registration, and regulatory compliance services in India. End-to-end support for manufacturers and businesses.",
 
   keywords: [
     "BIS certification",
@@ -30,28 +30,28 @@ export const metadata: Metadata = {
     "Eminence Global Compliances",
   ],
 
-  authors: [{ name: "Eminence Global Compliances" }],
-  creator: "Eminence Global Compliances",
+  authors: [{ name: "Eminence Global Compliances Group" }],
+  creator: "Eminence Global Compliances Group",
 
   metadataBase: new URL("https://eminencecompliance.com"),
 
   openGraph: {
     title:
-      "Eminence Global Compliances | BIS Certification Experts",
+      "Eminence Global Compliances Group | BIS Certification Experts",
 
     description:
       "Trusted partner for BIS certification, ISI marking, and regulatory compliance services across India.",
 
     url: "https://eminencecompliance.com",
 
-    siteName: "Eminence Global Compliances",
+    siteName: "Eminence Global Compliances Group",
 
     images: [
       {
         url: "/logo.png",
         width: 800,
         height: 600,
-        alt: "Eminence Global Compliances",
+        alt: "Eminence Global Compliances Group",
       },
     ],
 
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Eminence Global Compliances | BIS Certification Experts",
+      "Eminence Global Compliances Group | BIS Certification Experts",
 
     description:
       "Trusted partner for BIS certification and regulatory compliance services across India.",
@@ -91,7 +91,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
 
-              name: "Eminence Global Compliances",
+              name: "Eminence Global Compliances Group",
 
               url: "https://eminencecompliance.com",
 

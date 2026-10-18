@@ -145,11 +145,11 @@ const serviceGroups: ServiceGroup[] = [
         icon: TbShieldStar,
         href: "/services/bis-isi-certification",
       },
-      {
-        label: "ISI Mark – Domestic Manufacturer",
-        icon: TbBuildingFactory2,
-        href: "/services/bis-isi-domestic-manufacturer",
-      },
+      // {
+      //   label: "ISI Mark – Domestic Manufacturer",
+      //   icon: TbBuildingFactory2,
+      //   href: "/services/bis-isi-domestic-manufacturer",
+      // },
       {
         label: "BIS CRS Registration",
         icon: TbCertificate,
@@ -285,27 +285,27 @@ const navLinks: NavLink[] = [
       { label: "News", href: "/updates/news" },
     ],
   },
-  {
-    label: "Portfolio",
-    href: "/portfolio",
-    dropdown: "links",
-    items: [
-      { label: "Case Studies", href: "/portfolio/case-studies" },
-      { label: "Projects", href: "/portfolio/projects" },
-      { label: "Clients", href: "/portfolio/clients" },
-      { label: "Testimonials", href: "/portfolio/testimonials" },
-    ],
-  },
+  // {
+  //   label: "Portfolio",
+  //   href: "/portfolio",
+  //   dropdown: "links",
+  //   items: [
+  //     { label: "Case Studies", href: "/portfolio/case-studies" },
+  //     { label: "Projects", href: "/portfolio/projects" },
+  //     { label: "Clients", href: "/portfolio/clients" },
+  //     { label: "Testimonials", href: "/portfolio/testimonials" },
+  //   ],
+  // },
   // { label: "Certification Process", href: "/process" },
   // { label: "Achievements", href: "/achievements" },
   // { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
-const socialLinks = [
-  { icon: IoLogoLinkedin, href: "https://linkedin.com" },
-  { icon: FaXTwitter, href: "https://twitter.com" },
-  { icon: FaInstagram, href: "https://instagram.com" },
+export const socialLinks = [
+  { name: "LinkedIn", icon: IoLogoLinkedin, href: "https://www.linkedin.com/company/eminence-global-compliance-group" },
+  { name: "X", icon: FaXTwitter, href: "https://twitter.com" },
+  { name: "Instagram", icon: FaInstagram, href: "https://www.instagram.com/eminenceglobalcompliance?cplk=bm01YmltcjY0cG90" },
 ];
 
 // ─── Framer variants ───────────────────────────────────────────────────────────

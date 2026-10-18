@@ -20,6 +20,7 @@ import {
 } from "react-icons/fa";
 import { MdVerified, MdOutlineLanguage } from "react-icons/md";
 import Image from "next/image";
+import { socialLinks } from "./Navbar";
 
 /* ─────────────────────────────────────────────
    Types
@@ -238,7 +239,7 @@ export function Footer() {
               across India and global markets.
             </p>
 
-            <div className="flex gap-3 pt-1">
+            {/* <div className="flex gap-3 pt-1">
               {([FaLinkedin, FaTwitter, FaFacebook, FaInstagram] as const).map(
                 (Icon, i) => (
                   <a
@@ -264,7 +265,34 @@ export function Footer() {
                   </a>
                 )
               )}
-            </div>
+            </div> */}
+            <div className="flex gap-3 pt-1">
+  {socialLinks.map(({ name, icon: Icon, href }) => (
+    <a
+      key={name}
+      href={href}
+      target="_blank"
+      rel="noopener"
+      aria-label={`Eminence on ${name}`}
+      className="w-8 h-8 rounded flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5"
+      style={{
+        background: "rgba(255,255,255,0.06)",
+        border: "1px solid rgba(188,135,55,0.2)",
+        color: "rgba(188,135,55,0.8)",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = "rgba(188,135,55,0.15)";
+        e.currentTarget.style.borderColor = "rgba(188,135,55,0.6)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = "rgba(255,255,255,0.06)";
+        e.currentTarget.style.borderColor = "rgba(188,135,55,0.2)";
+      }}
+    >
+      <Icon size={14} />
+    </a>
+  ))}
+</div>
           </div>
 
           {/* COL 2 — Regulatory Services */}
