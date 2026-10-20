@@ -147,14 +147,18 @@ export default function Contact() {
 
   const handleContact = async (data: ContactFormData) => {
     try {
+      setStatus("idle");
+      await axios.post("/api/contact", data);
       setStatus("success");
       reset();
       setTimeout(() => setStatus("idle"), 6000);
-    } catch {
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
       setStatus("error");
       setTimeout(() => setStatus("idle"), 5000);
     }
   };
+
 
   return (
     <>

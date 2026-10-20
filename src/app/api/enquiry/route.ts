@@ -21,8 +21,6 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid mobile number." }, { status: 400 });
     }
 
-    console.log(process.env.GMAIL_USER, "user")
-
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
