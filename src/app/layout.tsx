@@ -153,6 +153,8 @@ import Navbar from "@/components/Navbar";
 import { ToastContainer } from "react-toastify";
 import LenisScroll from "@/components/lenisScroll";
 import { Footer } from "@/components/Footer";
+import EnquiryPopup from "@/components/EnquiryPopup";
+
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -285,6 +287,7 @@ export default function RootLayout({
 
         {children}
 
+        <EnquiryPopup />   {/* add this */}
         <ToastContainer
           position="top-right"
           autoClose={3000}
