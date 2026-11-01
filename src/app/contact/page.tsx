@@ -338,7 +338,7 @@ export default function Contact() {
                       Request a Consultation
                     </h3>
                     <p className="family-medium text-xs mt-0.5" style={{ color: "rgb(32,56,92)" }}>
-                      Our team responds within 24 business hours 
+                      Our team responds within 1 business hours 
                     </p>
                   </div>
                   <div

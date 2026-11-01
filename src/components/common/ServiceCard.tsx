@@ -367,6 +367,11 @@ const ServiceCard = ({
   const cardNumber = String(index + 1).padStart(2, "0");
 
   return (
+    <Link
+  href={`/services/${id}`}
+  className="block h-full rounded-[22px] outline-none focus-visible:ring-2 focus-visible:ring-[#bc8737] focus-visible:ring-offset-4"
+  aria-label={`Learn more about ${title}`}
+>
     <motion.div variants={cardVariants} className="h-full">
       <motion.div
         onMouseEnter={() => setIsHovered(true)}
@@ -648,7 +653,7 @@ const ServiceCard = ({
               {/* Footer */}
               <div className="flex items-center justify-between">
                 {/* CTA */}
-                <Link
+                {/* <Link
                   href={`/services/${id}`}
                   className="inline-flex items-center text-[0.67rem] font-bold uppercase tracking-[0.11em] transition-all duration-300"
                   style={{
@@ -682,7 +687,7 @@ const ServiceCard = ({
                       <path d="M2 5h6M5 2l3 3-3 3" />
                     </svg>
                   </motion.span>
-                </Link>
+                </Link> */}
 
                 {/* Stat chip */}
                 {abbr && (
@@ -737,6 +742,7 @@ const ServiceCard = ({
         </article>
       </motion.div>
     </motion.div>
+    </Link>
   );
 };
 
